@@ -43,11 +43,11 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background font-inter">
       {/* Navigation */}
       <nav className="border-b border-border bg-background/80 backdrop-blur-lg sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="font-bold text-xl text-foreground">Afra.Portfolio</div>
+          <div className="font-baloo font-bold text-xl text-foreground">Afra.Portfolio</div>
           
           <div className="hidden md:flex items-center gap-8">
             <a href="#work" className="text-muted-foreground hover:text-foreground transition-colors">Work</a>
@@ -68,17 +68,17 @@ const Index = () => {
           <Sparkles className="text-primary w-8 h-8 animate-pulse" />
         </div>
         
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-6xl md:text-8xl font-bold text-foreground mb-6">
+        <div className="max-w-4xl mx-auto text-center font-baloo">
+          <h1 className="text-6xl md:text-8xl font-baloo font-bold text-foreground mb-6">
             Hi, I'm Afra.
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-12">
+          <p className="text-xl md:text-2xl font-inter text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-12">
             UX/UI Designer focused on creating thoughtful, joyful, human-first products.
           </p>
           
           <Button 
             onClick={() => navigate('/flight-case-study')}
-            className="bg-coral hover:bg-coral/90 text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all"
+            className="bg-coral hover:bg-coral/90 text-white px-8 py-4 rounded-full font-baloo font-semibold shadow-lg hover:shadow-xl transition-all"
           >
             See My Work
           </Button>
@@ -126,7 +126,7 @@ const Index = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-foreground mb-6">About me</h2>
+              <h2 className="text-4xl font-baloo font-bold text-foreground mb-6">About me</h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
                   I'm Afra, a UX/UI Designer and Founding team of few.
@@ -161,10 +161,10 @@ const Index = () => {
       {/* Tools Section */}
       <section id="tools" className="py-16 px-6 bg-mint-light">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-foreground mb-4">
+          <h2 className="text-4xl font-baloo font-bold text-foreground mb-4">
             These are the tools
           </h2>
-          <h3 className="text-4xl font-bold text-foreground mb-12">
+          <h3 className="text-4xl font-baloo font-bold text-foreground mb-12">
             I use everyday
           </h3>
           
@@ -187,13 +187,13 @@ const Index = () => {
       <section id="contact" className="py-16 px-6 bg-gradient-to-br from-peach-light via-coral-light to-lavender-light">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+            <h2 className="text-4xl md:text-5xl font-baloo font-bold text-foreground mb-4">
               Love to hear
             </h2>
-            <h3 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+            <h3 className="text-4xl md:text-5xl font-baloo font-bold text-foreground mb-4">
               from you,
             </h3>
-            <h4 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+            <h4 className="text-4xl md:text-5xl font-baloo font-bold text-foreground mb-4">
               Get in <span className="italic">touch</span>
             </h4>
           </div>
