@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles, User, Mail, MessageCircle, Figma, Palette, Monitor, Coffee, Heart, Star, ArrowUp, Smile } from "lucide-react";
+import { ArrowRight, Sparkles, User, Mail, MessageCircle, Figma, Palette, Monitor, Coffee, Heart, Star, ArrowUp, Smile, Lightbulb, Zap, Eye, Target, Layers, PenTool, Users, MousePointer, Compass, Workflow } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -72,18 +72,24 @@ const Index = () => {
 
       {/* Hero Section */}
       <section className="py-20 px-6 relative overflow-hidden">
-        {/* Decorative doodles */}
+        {/* Decorative UX doodles */}
         <div className="doodle-sparkle top-8 left-8">
-          <Sparkles className="w-8 h-8" />
+          <Lightbulb className="w-8 h-8" />
         </div>
         <div className="doodle-heart top-16 right-16">
-          <Heart className="w-6 h-6" />
+          <Eye className="w-6 h-6" />
         </div>
         <div className="doodle-star bottom-32 left-24">
-          <Star className="w-5 h-5" />
+          <Target className="w-5 h-5" />
         </div>
         <div className="doodle-arrow bottom-20 right-32">
-          <ArrowUp className="w-4 h-4 rotate-45" />
+          <Zap className="w-4 h-4" />
+        </div>
+        <div className="doodle-smile top-24 left-32">
+          <PenTool className="w-5 h-5" />
+        </div>
+        <div className="doodle-heart bottom-40 right-8">
+          <Layers className="w-4 h-4" />
         </div>
         
         <div className="max-w-4xl mx-auto text-center font-baloo">
@@ -141,12 +147,18 @@ const Index = () => {
 
       {/* About Section */}
       <section id="about" className="py-16 px-6 relative">
-        {/* Decorative doodles */}
+        {/* UX Research & Design doodles */}
         <div className="doodle-smile top-8 right-8">
-          <Smile className="w-6 h-6" />
+          <Users className="w-6 h-6" />
         </div>
         <div className="doodle-star bottom-12 left-8">
-          <Star className="w-4 h-4" />
+          <MousePointer className="w-4 h-4" />
+        </div>
+        <div className="doodle-sparkle top-32 left-16">
+          <Compass className="w-5 h-5" />
+        </div>
+        <div className="doodle-arrow bottom-32 right-24">
+          <Workflow className="w-4 h-4" />
         </div>
         
         <div className="max-w-6xl mx-auto">
