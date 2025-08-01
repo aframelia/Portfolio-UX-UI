@@ -1,37 +1,41 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles, User, Mail, MessageCircle, Figma, Palette, Monitor, Coffee } from "lucide-react";
+import { ArrowRight, Sparkles, User, Mail, MessageCircle, Figma, Palette, Monitor, Coffee, Heart, Star, ArrowUp, Smile } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { useLanguage } from "@/contexts/LanguageContext";
+import ThemeToggle from "@/components/ThemeToggle";
+import LanguageToggle from "@/components/LanguageToggle";
 
 const Index = () => {
   const navigate = useNavigate();
+  const { t } = useLanguage();
 
   const portfolioItems = [
     {
-      title: "Flight Booking App",
-      category: "UX/UI Design",
+      title: t('portfolio.flight.title'),
+      category: t('portfolio.flight.category'),
       image: "bg-gradient-to-br from-sky to-sky-light",
-      description: "Simplifying travel booking experience"
+      description: t('portfolio.flight.description')
     },
     {
-      title: "Trading Dashboard",
-      category: "UI Design",
+      title: t('portfolio.trading.title'),
+      category: t('portfolio.trading.category'),
       image: "bg-gradient-to-br from-slate-800 to-slate-900",
-      description: "Real-time financial data visualization"
+      description: t('portfolio.trading.description')
     },
     {
-      title: "Mobile Banking",
-      category: "UX Design",
+      title: t('portfolio.banking.title'),
+      category: t('portfolio.banking.category'),
       image: "bg-gradient-to-br from-mint to-mint-light",
-      description: "Secure and intuitive banking"
+      description: t('portfolio.banking.description')
     },
     {
-      title: "E-commerce Platform",
-      category: "Product Design",
+      title: t('portfolio.ecommerce.title'),
+      category: t('portfolio.ecommerce.category'),
       image: "bg-gradient-to-br from-peach to-peach-light",
-      description: "Modern shopping experience"
+      description: t('portfolio.ecommerce.description')
     }
   ];
 
@@ -50,37 +54,51 @@ const Index = () => {
           <div className="font-baloo font-bold text-xl text-foreground">Afra.Portfolio</div>
           
           <div className="hidden md:flex items-center gap-8">
-            <a href="#work" className="text-muted-foreground hover:text-foreground transition-colors">Work</a>
-            <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">Talk</a>
-            <a href="#tools" className="text-muted-foreground hover:text-foreground transition-colors">Skills</a>
-            <a href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">Blog</a>
+            <a href="#work" className="text-muted-foreground hover:text-foreground transition-colors">{t('nav.work')}</a>
+            <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">{t('nav.talk')}</a>
+            <a href="#tools" className="text-muted-foreground hover:text-foreground transition-colors">{t('nav.skills')}</a>
+            <a href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">{t('nav.blog')}</a>
           </div>
           
-          <Button className="bg-coral hover:bg-coral/90 text-white rounded-full px-6">
-            Contact
-          </Button>
+          <div className="flex items-center gap-2">
+            <LanguageToggle />
+            <ThemeToggle />
+            <Button className="bg-coral hover:bg-coral/90 text-white rounded-full px-6">
+              {t('nav.contact')}
+            </Button>
+          </div>
         </div>
       </nav>
 
       {/* Hero Section */}
       <section className="py-20 px-6 relative overflow-hidden">
-        <div className="absolute top-8 left-8">
-          <Sparkles className="text-primary w-8 h-8 animate-pulse" />
+        {/* Decorative doodles */}
+        <div className="doodle-sparkle top-8 left-8">
+          <Sparkles className="w-8 h-8" />
+        </div>
+        <div className="doodle-heart top-16 right-16">
+          <Heart className="w-6 h-6" />
+        </div>
+        <div className="doodle-star bottom-32 left-24">
+          <Star className="w-5 h-5" />
+        </div>
+        <div className="doodle-arrow bottom-20 right-32">
+          <ArrowUp className="w-4 h-4 rotate-45" />
         </div>
         
         <div className="max-w-4xl mx-auto text-center font-baloo">
           <h1 className="text-6xl md:text-8xl font-baloo font-bold text-foreground mb-6">
-            Hi, I'm Afra.
+            {t('hero.title')}
           </h1>
           <p className="text-xl md:text-2xl font-inter text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-12">
-            UX/UI Designer focused on creating thoughtful, joyful, human-first products.
+            {t('hero.subtitle')}
           </p>
           
           <Button 
             onClick={() => navigate('/flight-case-study')}
             className="bg-coral hover:bg-coral/90 text-white px-8 py-4 rounded-full font-baloo font-semibold shadow-lg hover:shadow-xl transition-all"
           >
-            See My Work
+            {t('hero.cta')}
           </Button>
         </div>
       </section>
@@ -122,34 +140,33 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-16 px-6">
+      <section id="about" className="py-16 px-6 relative">
+        {/* Decorative doodles */}
+        <div className="doodle-smile top-8 right-8">
+          <Smile className="w-6 h-6" />
+        </div>
+        <div className="doodle-star bottom-12 left-8">
+          <Star className="w-4 h-4" />
+        </div>
+        
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-baloo font-bold text-foreground mb-6">About me</h2>
+              <h2 className="text-4xl font-baloo font-bold text-foreground mb-6">{t('about.title')}</h2>
               <div className="space-y-4 text-muted-foreground">
-                <p>
-                  I'm Afra, a UX/UI Designer and Founding team of few.
-                </p>
-                <p>
-                  I love everything about UX — user findings, wireframing, prototyping,
-                  and I also design to make the UX come alive, whether that's
-                  healthcare, productivity or entertainment.
-                </p>
-                <p>
-                  Because every designer is both user and maker, I find myself constantly
-                  building applications and products.
-                </p>
-                <p>
-                  My experience within varies — from digital to detail and usually
-                  everything in between.
-                </p>
+                <p>{t('about.intro')}</p>
+                <p>{t('about.ux')}</p>
+                <p>{t('about.maker')}</p>
+                <p>{t('about.experience')}</p>
               </div>
             </div>
             
-            <div className="flex justify-center">
+            <div className="flex justify-center relative">
+              <div className="doodle-heart -top-4 -left-4">
+                <Heart className="w-5 h-5" />
+              </div>
               <div className="bg-gradient-to-br from-lavender to-mint-light rounded-2xl p-8 w-80 h-80 flex items-center justify-center">
-                <div className="bg-white rounded-full p-6 shadow-lg">
+                <div className="bg-card dark:bg-card rounded-full p-6 shadow-lg">
                   <User className="w-24 h-24 text-primary" />
                 </div>
               </div>
@@ -159,19 +176,27 @@ const Index = () => {
       </section>
 
       {/* Tools Section */}
-      <section id="tools" className="py-16 px-6 bg-mint-light">
+      <section id="tools" className="py-16 px-6 bg-mint-light dark:bg-mint relative">
+        {/* Decorative doodles */}
+        <div className="doodle-sparkle top-12 left-12">
+          <Sparkles className="w-5 h-5" />
+        </div>
+        <div className="doodle-arrow bottom-16 right-16">
+          <ArrowUp className="w-4 h-4 rotate-12" />
+        </div>
+        
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-baloo font-bold text-foreground mb-4">
-            These are the tools
+            {t('tools.title1')}
           </h2>
           <h3 className="text-4xl font-baloo font-bold text-foreground mb-12">
-            I use everyday
+            {t('tools.title2')}
           </h3>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {tools.map((tool, index) => (
               <div key={index} className="flex flex-col items-center group">
-                <div className="bg-card rounded-2xl p-6 shadow-sm border hover:shadow-lg transition-all group-hover:scale-105">
+                <div className="bg-card dark:bg-card rounded-2xl p-6 shadow-sm border hover:shadow-lg transition-all group-hover:scale-105">
                   <div className={tool.color}>
                     {tool.icon}
                   </div>
@@ -184,17 +209,28 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-16 px-6 bg-gradient-to-br from-peach-light via-coral-light to-lavender-light">
+      <section id="contact" className="py-16 px-6 bg-gradient-to-br from-peach-light via-coral-light to-lavender-light dark:from-peach dark:via-coral dark:to-lavender relative">
+        {/* Decorative doodles */}
+        <div className="doodle-heart top-8 left-8">
+          <Heart className="w-6 h-6" />
+        </div>
+        <div className="doodle-star top-16 right-24">
+          <Star className="w-5 h-5" />
+        </div>
+        <div className="doodle-smile bottom-16 left-24">
+          <Smile className="w-5 h-5" />
+        </div>
+        
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-baloo font-bold text-foreground mb-4">
-              Love to hear
+              {t('contact.title1')}
             </h2>
             <h3 className="text-4xl md:text-5xl font-baloo font-bold text-foreground mb-4">
-              from you,
+              {t('contact.title2')}
             </h3>
             <h4 className="text-4xl md:text-5xl font-baloo font-bold text-foreground mb-4">
-              Get in <span className="italic">touch</span>
+              {t('contact.title3')} <span className="italic">touch</span>
             </h4>
           </div>
           
@@ -211,12 +247,12 @@ const Index = () => {
             
             <div className="space-y-4">
               <div className="grid grid-cols-2 gap-4">
-                <Input placeholder="Email" className="bg-card border-border" />
-                <Input placeholder="your.name@email.com" className="bg-card border-border" />
+                <Input placeholder={t('contact.email')} className="bg-card dark:bg-card border-border" />
+                <Input placeholder={t('contact.name')} className="bg-card dark:bg-card border-border" />
               </div>
-              <Textarea placeholder="Message" rows={4} className="bg-card border-border" />
+              <Textarea placeholder={t('contact.message')} rows={4} className="bg-card dark:bg-card border-border" />
               <Button className="w-full bg-coral hover:bg-coral/90 text-white rounded-full py-3">
-                Submit
+                {t('contact.submit')}
               </Button>
             </div>
           </div>
