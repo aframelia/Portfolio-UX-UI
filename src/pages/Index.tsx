@@ -176,7 +176,7 @@ const Index = () => {
       </section>
 
       {/* Tools Section */}
-      <section id="tools" className="py-16 px-6 bg-mint-light dark:bg-mint relative">
+      <section id="tools" className="py-16 px-6 bg-lavender-light relative">
         {/* Decorative doodles */}
         <div className="doodle-sparkle top-12 left-12">
           <Sparkles className="w-5 h-5" />
@@ -209,7 +209,7 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-16 px-6 bg-gradient-to-br from-peach-light via-coral-light to-lavender-light dark:from-peach dark:via-coral dark:to-lavender relative">
+      <section id="contact" className="py-16 px-6 bg-lavender-light relative">
         {/* Decorative doodles */}
         <div className="doodle-heart top-8 left-8">
           <Heart className="w-6 h-6" />
