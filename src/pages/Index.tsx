@@ -43,7 +43,7 @@ const Index = () => {
     { name: "Figma", icon: <Figma className="w-8 h-8" />, color: "text-purple-500" },
     { name: "Adobe XD", icon: <Palette className="w-8 h-8" />, color: "text-pink-500" },
     { name: "Framer", icon: <Monitor className="w-8 h-8" />, color: "text-blue-500" },
-    { name: "Principle", icon: <Coffee className="w-8 h-8" />, color: "text-orange-500" }
+    { name: "HotJar", icon: <Coffee className="w-8 h-8" />, color: "text-orange-500" }
   ];
 
   return (
