@@ -51,7 +51,7 @@ const Index = () => {
       {/* Navigation */}
       <nav className="border-b border-border bg-background/80 backdrop-blur-lg sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="font-baloo font-bold text-xl text-foreground">Afra.Portfolio</div>
+          <div className="font-baloo font-bold text-xl text-foreground">AfraMelia</div>
           
           <div className="hidden md:flex items-center gap-8">
             <a href="#work" className="text-muted-foreground hover:text-foreground transition-colors">{t('nav.work')}</a>
