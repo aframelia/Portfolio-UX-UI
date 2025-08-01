@@ -230,7 +230,7 @@ const Index = () => {
               {t('contact.title2')}
             </h3>
             <h4 className="text-4xl md:text-5xl font-baloo font-bold text-foreground mb-4">
-              {t('contact.title3')} <span className="italic">touch</span>
+              {t('contact.title3')} 
             </h4>
           </div>
           
