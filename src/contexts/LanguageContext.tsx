@@ -10,9 +10,8 @@ const translations = {
   en: {
     // Navigation
     'nav.work': 'Work',
-    'nav.talk': 'Talk',
+    'nav.talk': 'About',
     'nav.skills': 'Skills',
-    'nav.blog': 'Blog',
     'nav.contact': 'Contact',
     
     // Hero
@@ -35,8 +34,8 @@ const translations = {
     'contact.title1': 'Love to hear',
     'contact.title2': 'from you,',
     'contact.title3': 'Get in touch',
+    'contact.name': 'Name',
     'contact.email': 'Email',
-    'contact.name': 'your.name@email.com',
     'contact.message': 'Message',
     'contact.submit': 'Submit',
     
@@ -44,22 +43,21 @@ const translations = {
     'portfolio.flight.title': 'Flight Booking App',
     'portfolio.flight.category': 'UX/UI Design',
     'portfolio.flight.description': 'Simplifying travel booking experience',
-    'portfolio.trading.title': 'Trading Dashboard',
-    'portfolio.trading.category': 'UI Design',
-    'portfolio.trading.description': 'Real-time financial data visualization',
-    'portfolio.banking.title': 'Mobile Banking',
-    'portfolio.banking.category': 'UX Design',
-    'portfolio.banking.description': 'Secure and intuitive banking',
+    'portfolio.redesign.title': 'Redesign Website',
+    'portfolio.redesign.category': 'UI Design',
+    'portfolio.redesign.description': 'Redesigning an e-commerce cupcake website',
+    'portfolio.design.title': 'Portafolio template',
+    'portfolio.design.category': 'UI Design, React.js',
+    'portfolio.design.description': 'A template for a portfolio in React.js',
     'portfolio.ecommerce.title': 'E-commerce Platform',
     'portfolio.ecommerce.category': 'Product Design',
-    'portfolio.ecommerce.description': 'Modern shopping experience',
+    'portfolio.ecommerce.description': 'Kids shopping experience',
   },
   es: {
     // Navigation
     'nav.work': 'Trabajo',
-    'nav.talk': 'Hablar',
+    'nav.talk': 'Sobre mi',
     'nav.skills': 'Habilidades',
-    'nav.blog': 'Blog',
     'nav.contact': 'Contacto',
     
     // Hero
@@ -91,15 +89,15 @@ const translations = {
     'portfolio.flight.title': 'App de Reservas de Vuelos',
     'portfolio.flight.category': 'Diseño UX/UI',
     'portfolio.flight.description': 'Simplificando la experiencia de reserva de viajes',
-    'portfolio.trading.title': 'Dashboard de Trading',
-    'portfolio.trading.category': 'Diseño UI',
-    'portfolio.trading.description': 'Visualización de datos financieros en tiempo real',
-    'portfolio.banking.title': 'Banca Móvil',
-    'portfolio.banking.category': 'Diseño UX',
-    'portfolio.banking.description': 'Banca segura e intuitiva',
+    'portfolio.redesign.title': 'Rediseño pagina web',
+    'portfolio.redesign.category': 'Diseño UI',
+    'portfolio.redesign.description': 'Rediseño de una pagina web de comercio de cupcakes.',
+    'portfolio.design.title': 'Plantilla portfolio',
+    'portfolio.design.category': 'Diseño UI, React.js',
+    'portfolio.design.description': 'Una plantilla para portfolio en React.js',
     'portfolio.ecommerce.title': 'Plataforma E-commerce',
     'portfolio.ecommerce.category': 'Diseño de Producto',
-    'portfolio.ecommerce.description': 'Experiencia de compra moderna',
+    'portfolio.ecommerce.description': 'Experiencia de compra para productos de niños',
   }
 };
 

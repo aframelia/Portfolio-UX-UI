@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles, User, Mail, MessageCircle, Figma, Palette, Monitor, Coffee, Heart, Star, ArrowUp, Smile, Lightbulb, Zap, Eye, Target, Layers, PenTool, Users, MousePointer, Compass, Workflow } from "lucide-react";
+import { ArrowRight, Sparkles, User, Mail, MessageCircle, Figma, Menu, X, Palette, Monitor, Coffee, Heart, Star, ArrowUp, Smile, Lightbulb, Zap, Eye, Target, Layers, PenTool, Users, MousePointer, Compass, Workflow, Linkedin, Github, Instagram, BaggageClaimIcon } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -11,30 +12,36 @@ import LanguageToggle from "@/components/LanguageToggle";
 const Index = () => {
   const navigate = useNavigate();
   const { t } = useLanguage();
+  const [menuOpen, setMenuOpen] = useState(false);
+
 
   const portfolioItems = [
     {
       title: t('portfolio.flight.title'),
       category: t('portfolio.flight.category'),
-      image: "bg-gradient-to-br from-sky to-sky-light",
+      image: "/flight.png",
+      bg: "bg-gradient-to-br from-sky to-sky-light",
       description: t('portfolio.flight.description')
     },
     {
-      title: t('portfolio.trading.title'),
-      category: t('portfolio.trading.category'),
-      image: "bg-gradient-to-br from-slate-800 to-slate-900",
-      description: t('portfolio.trading.description')
+      title: t('portfolio.redesign.title'),
+      category: t('portfolio.redesign.category'),
+      image: "/TorontoMoc.png",
+      bg: "bg-gradient-to-br from-slate-800 to-slate-900",
+      description: t('portfolio.redesign.description')
     },
     {
-      title: t('portfolio.banking.title'),
-      category: t('portfolio.banking.category'),
-      image: "bg-gradient-to-br from-mint to-mint-light",
-      description: t('portfolio.banking.description')
+      title: t('portfolio.design.title'),
+      category: t('portfolio.design.category'),
+      image: "/Portfoilio.png",
+      bg: "bg-gradient-to-br from-mint to-mint-light",
+      description: t('portfolio.design.description')
     },
     {
       title: t('portfolio.ecommerce.title'),
       category: t('portfolio.ecommerce.category'),
-      image: "bg-gradient-to-br from-peach to-peach-light",
+      image: "/squidgies.png",
+      bg: "bg-gradient-to-br from-peach to-peach-light",
       description: t('portfolio.ecommerce.description')
     }
   ];
@@ -53,19 +60,35 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="font-baloo font-bold text-xl text-foreground">AfraMelia</div>
           
+          {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8">
             <a href="#work" className="text-muted-foreground hover:text-foreground transition-colors">{t('nav.work')}</a>
             <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">{t('nav.talk')}</a>
             <a href="#tools" className="text-muted-foreground hover:text-foreground transition-colors">{t('nav.skills')}</a>
-            <a href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">{t('nav.blog')}</a>
           </div>
-          
-          <div className="flex items-center gap-2">
+
+          {/* Desktop Contact Button */}
+          <div className="hidden md:flex items-center gap-2">
             <LanguageToggle />
             <ThemeToggle />
-            <Button className="bg-coral hover:bg-coral/90 text-white rounded-full px-6">
+            <Button
+              onClick={() => {
+                const section = document.getElementById("contact");
+                if (section) section.scrollIntoView({ behavior: "smooth" });
+              }}
+              className="bg-coral hover:bg-coral/90 text-white rounded-full px-6"
+            >
               {t('nav.contact')}
             </Button>
+          </div>
+
+          {/* Mobile Nav Toggle */}
+          <div className="md:hidden flex items-center gap-2">
+            <LanguageToggle />
+            <ThemeToggle />
+            <button onClick={() => setMenuOpen(!menuOpen)} className="text-foreground">
+              {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
           </div>
         </div>
       </nav>
@@ -101,7 +124,12 @@ const Index = () => {
           </p>
           
           <Button 
-            onClick={() => navigate('/flight-case-study')}
+            onClick={() => {
+              const section = document.getElementById("work");
+              if (section) {
+                section.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
             className="bg-coral hover:bg-coral/90 text-white px-8 py-4 rounded-full font-baloo font-semibold shadow-lg hover:shadow-xl transition-all"
           >
             {t('hero.cta')}
@@ -119,9 +147,9 @@ const Index = () => {
                 className="group cursor-pointer hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden"
                 onClick={() => navigate('/flight-case-study')}
               >
-                <div className={`h-64 ${item.image} relative flex items-center justify-center`}>
+                <div className={`h-64 ${item.bg} relative flex items-center justify-center`}>
                   {/* Mock device/interface */}
-                  <div className="bg-white rounded-lg p-4 shadow-lg w-48 h-32">
+                  {/* <div className="bg-white rounded-lg p-4 shadow-lg w-48 h-32">
                     <div className="flex flex-col gap-2">
                       <div className="h-3 bg-slate-200 rounded w-3/4"></div>
                       <div className="h-3 bg-slate-200 rounded w-1/2"></div>
@@ -131,7 +159,12 @@ const Index = () => {
                         <div className="h-3 bg-slate-200 rounded w-1/3"></div>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    />
                 </div>
                 
                 <div className="p-6">
@@ -178,8 +211,11 @@ const Index = () => {
                 <Heart className="w-5 h-5" />
               </div>
               <div className="bg-gradient-to-br from-lavender to-mint-light rounded-2xl p-8 w-80 h-80 flex items-center justify-center">
-                <div className="bg-card dark:bg-card rounded-full p-6 shadow-lg">
-                  <User className="w-24 h-24 text-primary" />
+                <div className="overflow-hidden">
+                <img 
+                  src="/me.png" 
+                  alt="Afra Melia" 
+                />
                 </div>
               </div>
             </div>
@@ -248,19 +284,41 @@ const Index = () => {
           
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-4">
-              <div className="flex gap-4">
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">Twitter</a>
-                <span className="text-muted-foreground">•</span>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">Dribbble</a>
-                <span className="text-muted-foreground">•</span>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">Instagram</a>
-              </div>
+            <div className="flex gap-6 justify-center md:justify-start">
+              <a
+                href="https://linkedin.com/in/yourusername"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+              >
+                <Linkedin className="w-5 h-5" />
+                LinkedIn
+              </a>
+              <a
+                href="https://github.com/yourusername"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+              >
+                <Github className="w-5 h-5" />
+                GitHub
+              </a>
+              <a
+                href="https://instagram.com/yourusername"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+              >
+                <Instagram className="w-5 h-5" />
+                Instagram
+              </a>
+            </div>
             </div>
             
             <div className="space-y-4">
               <div className="grid grid-cols-2 gap-4">
-                <Input placeholder={t('contact.email')} className="bg-card dark:bg-card border-border" />
                 <Input placeholder={t('contact.name')} className="bg-card dark:bg-card border-border" />
+                <Input placeholder={t('contact.email')} className="bg-card dark:bg-card border-border" />
               </div>
               <Textarea placeholder={t('contact.message')} rows={4} className="bg-card dark:bg-card border-border" />
               <Button className="w-full bg-coral hover:bg-coral/90 text-white rounded-full py-3">
@@ -270,6 +328,41 @@ const Index = () => {
           </div>
         </div>
       </section>
+      {menuOpen && (
+        <div className="md:hidden fixed top-16 left-0 right-0 bg-background z-40 border-t border-border px-6 py-6 space-y-4 shadow-md">
+          <a
+            href="#work"
+            onClick={() => setMenuOpen(false)}
+            className="block text-muted-foreground hover:text-foreground transition-colors"
+          >
+            {t('nav.work')}
+          </a>
+          <a
+            href="#about"
+            onClick={() => setMenuOpen(false)}
+            className="block text-muted-foreground hover:text-foreground transition-colors"
+          >
+            {t('nav.talk')}
+          </a>
+          <a
+            href="#tools"
+            onClick={() => setMenuOpen(false)}
+            className="block text-muted-foreground hover:text-foreground transition-colors"
+          >
+            {t('nav.skills')}
+          </a>
+          <Button
+            onClick={() => {
+              const section = document.getElementById("contact");
+              if (section) section.scrollIntoView({ behavior: "smooth" });
+              setMenuOpen(false);
+            }}
+            className="w-full bg-coral hover:bg-coral/90 text-white rounded-full"
+          >
+            {t('nav.contact')}
+          </Button>
+        </div>
+      )}
     </div>
   );
 };

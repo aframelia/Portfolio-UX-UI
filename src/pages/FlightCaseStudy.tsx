@@ -1,13 +1,13 @@
 import Navigation from "@/components/Navigation";
-import CaseHero from "@/components/CaseHero";
-import CaseMeta from "@/components/CaseMeta";
-import CaseProblem from "@/components/CaseProblem";
-import CaseResearch from "@/components/CaseResearch";
-import CaseGoals from "@/components/CaseGoals";
-import CaseWireframes from "@/components/CaseWireframes";
-import CaseDesigns from "@/components/CaseDesigns";
-import CaseResults from "@/components/CaseResults";
-import CaseTakeaways from "@/components/CaseTakeaways";
+import CaseHero from "@/components/case-studies/flight/CaseHero";
+import CaseMeta from "@/components/case-studies/flight/CaseMeta";
+import CaseProblem from "@/components/case-studies/flight/CaseProblem";
+import CaseResearch from "@/components/case-studies/flight/CaseResearch";
+import CaseGoals from "@/components/case-studies/flight/CaseGoals";
+import CaseWireframes from "@/components/case-studies/flight/CaseWireframes";
+import CaseDesigns from "@/components/case-studies/flight/CaseDesigns";
+import CaseResults from "@/components/case-studies/flight/CaseResults";
+import CaseTakeaways from "@/components/case-studies/flight/CaseTakeaways";
 import CaseCTA from "@/components/CaseCTA";
 
 const FlightCaseStudy = () => {
