@@ -8,6 +8,10 @@ import CaseWireframes from "@/components/case-studies/flight/CaseWireframes";
 import CaseDesigns from "@/components/case-studies/flight/CaseDesigns";
 import CaseResults from "@/components/case-studies/flight/CaseResults";
 import CaseTakeaways from "@/components/case-studies/flight/CaseTakeaways";
+import CasePersona from "@/components/case-studies/flight/CasePersona";
+import CaseJourney from "@/components/case-studies/flight/CaseJourney";
+import CaseTesting from "@/components/case-studies/flight/CaseTesting";
+import CaseNextSteps from "@/components/case-studies/flight/CaseNextSteps";
 import CaseCTA from "@/components/CaseCTA";
 
 const FlightCaseStudy = () => {
@@ -20,10 +24,14 @@ const FlightCaseStudy = () => {
         <CaseProblem />
         <CaseResearch />
         <CaseGoals />
+        <CasePersona />
+        <CaseJourney />
         <CaseWireframes />
         <CaseDesigns />
+        <CaseTesting />
         <CaseResults />
         <CaseTakeaways />
+        <CaseNextSteps />
         <CaseCTA />
       </main>
     </div>

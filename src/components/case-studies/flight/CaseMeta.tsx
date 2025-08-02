@@ -10,7 +10,7 @@ const CaseMeta = () => {
               <User className="w-6 h-6 text-primary" />
               <h3 className="text-xl font-semibold text-foreground">Role</h3>
             </div>
-            <p className="text-muted-foreground">UX/UI Designer</p>
+            <p className="text-muted-foreground">Solo UX/UI Designer</p>
           </div>
           
           <div className="bg-card rounded-2xl p-8 shadow-sm border">
@@ -18,7 +18,7 @@ const CaseMeta = () => {
               <Wrench className="w-6 h-6 text-coral" />
               <h3 className="text-xl font-semibold text-foreground">Tools</h3>
             </div>
-            <p className="text-muted-foreground">Figma, Maze, Framer</p>
+            <p className="text-muted-foreground">Figma, Maze, Notion, FigJam</p>
           </div>
           
           <div className="bg-card rounded-2xl p-8 shadow-sm border">
