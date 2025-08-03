@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles, User, Mail, MessageCircle, Figma, Menu, X, Palette, Monitor, Coffee, Heart, Star, ArrowUp, Smile, Lightbulb, Zap, Eye, Target, Layers, PenTool, Users, MousePointer, Compass, Workflow, Linkedin, Github, Instagram, BaggageClaimIcon } from "lucide-react";
+import { ArrowRight, Sparkles, User, Mail, MessageCircle, Figma, Menu, X, Palette, Monitor, Coffee, Heart, Star, ArrowUp, Smile, Lightbulb, Zap, Eye, Target, Layers, PenTool, Users, MousePointer, Compass, Workflow, Linkedin, Github, Instagram, BaggageClaimIcon, Globe, Code, Braces, Paintbrush } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { Card } from "@/components/ui/card";
@@ -50,7 +50,11 @@ const Index = () => {
     { name: "Figma", icon: <Figma className="w-8 h-8" />, color: "text-purple-500" },
     { name: "Adobe XD", icon: <Palette className="w-8 h-8" />, color: "text-pink-500" },
     { name: "Framer", icon: <Monitor className="w-8 h-8" />, color: "text-blue-500" },
-    { name: "HotJar", icon: <Coffee className="w-8 h-8" />, color: "text-orange-500" }
+    { name: "HotJar", icon: <Coffee className="w-8 h-8" />, color: "text-orange-500" },
+    { name: "Webflow", icon: <Globe className="w-8 h-8" />, color: "text-indigo-500" },
+    { name: "React.js", icon: <Braces className="w-8 h-8" />, color: "text-cyan-500" },
+    { name: "HTML", icon: <Code className="w-8 h-8" />, color: "text-red-500" },
+    { name: "CSS", icon: <Paintbrush className="w-8 h-8" />, color: "text-blue-400" },
   ];
 
   return (
@@ -123,12 +127,14 @@ const Index = () => {
             {t('hero.subtitle')}
           </p>
           
-          <Button 
+          <Button
             onClick={() => {
-              const section = document.getElementById("work");
-              if (section) {
-                section.scrollIntoView({ behavior: "smooth" });
-              }
+              const link = document.createElement('a');
+              link.href = '/Afra.CV.pdf'; 
+              link.download = 'Afra_Melia_CV.pdf'; 
+              document.body.appendChild(link);
+              link.click();
+              document.body.removeChild(link);
             }}
             className="bg-coral hover:bg-coral/90 text-white px-8 py-4 rounded-full font-baloo font-semibold shadow-lg hover:shadow-xl transition-all"
           >
