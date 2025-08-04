@@ -1,11 +1,13 @@
 import { Clock, User, Users, Wrench } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const SquidgiesMeta = () => {
+  const { t } = useLanguage();
   const metaData = [
-    { icon: Clock, label: "Timeline", value: "6 weeks" },
-    { icon: User, label: "Role", value: "UX/UI Designer, Front-End Developer" },
-    { icon: Users, label: "Team", value: "Solo Project" },
-    { icon: Wrench, label: "Tools", value: "Figma, React Native, Notion" }
+    { icon: Clock, label: "Timeline", value: t('squidgies.meta.timeline') },
+    { icon: User, label: "Role", value: t('squidgies.meta.role') },
+    { icon: Users, label: "Team", value: t('squidgies.meta.team') },
+    { icon: Wrench, label: "Tools", value: t('squidgies.meta.tools') }
   ];
 
   return (
@@ -16,7 +18,7 @@ const SquidgiesMeta = () => {
             🧠 Project Overview
           </h2>
           <p className="text-lg text-muted-foreground">
-            E-commerce mobile app for children's clothes
+            {t('squidgies.meta.project')}
           </p>
         </div>
         

@@ -1,6 +1,8 @@
 import { ShirtIcon, Heart } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const SquidgiesHero = () => {
+  const { t } = useLanguage();
   return (
     <section className="relative min-h-screen bg-gradient-to-br from-sky-light via-lavender-light to-mint-light flex items-center justify-center overflow-hidden">
       {/* Shirt doodle */}
@@ -15,10 +17,10 @@ const SquidgiesHero = () => {
       
       <div className="text-center px-6 max-w-4xl">
         <h1 className="text-4xl md:text-7xl font-bold text-foreground mb-6">
-          Squidgies E-commerce 🧢
+          {t('squidgies.hero.title')}
         </h1>
         <p className="text-lg md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-          A smarter way for parents to shop kids' clothes that actually fit and are in stock
+          {t('squidgies.hero.subtitle')}
         </p>
       </div>
     </section>

@@ -1,6 +1,8 @@
 import { Sparkles, Send } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const CaseHero = () => {
+  const { t } = useLanguage();
   return (
     <section className="relative min-h-screen bg-gradient-to-br from-lavender-light via-sky-light to-mint-light flex items-center justify-center overflow-hidden">
       {/* Sparkle doodle */}
@@ -15,10 +17,10 @@ const CaseHero = () => {
       
       <div className="text-center px-6 max-w-4xl">
         <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6">
-          Fixing Flight Confusion ✈️
+          {t('flight.hero.title')}
         </h1>
         <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-          How I redesigned the UX for a travel app with real users in mind
+          {t('flight.hero.subtitle')}
         </p>
       </div>
     </section>
