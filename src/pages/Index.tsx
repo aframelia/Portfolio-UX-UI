@@ -13,16 +13,18 @@ const Index = () => {
   const navigate = useNavigate();
   const { t } = useLanguage();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [projectType, setProjectType] = useState<'design' | 'development'>('design');
 
 
-  const portfolioItems = [
+  const allPortfolioItems = [
     {
       title: t('portfolio.flight.title'),
       category: t('portfolio.flight.category'),
       image: "/flight.png",
       bg: "bg-gradient-to-br from-sky to-sky-light",
       description: t('portfolio.flight.description'),
-      link: "/flight-case-study"
+      link: "/flight-case-study",
+      type: 'design' as const,
     },
     {
       title: t('portfolio.redesign.title'),
@@ -30,7 +32,8 @@ const Index = () => {
       image: "/TorontoMoc.png",
       bg: "bg-gradient-to-br from-slate-800 to-slate-900",
       description: t('portfolio.redesign.description'),
-      link: "/cupcake-case-study"
+      link: "/cupcake-case-study",
+      type: 'design' as const,
     },
     {
       title: t('portfolio.design.title'),
@@ -38,7 +41,8 @@ const Index = () => {
       image: "/Portfoilio.png",
       bg: "bg-gradient-to-br from-mint to-mint-light",
       description: t('portfolio.design.description'),
-      link: "/squidgies-case-study"
+      link: "/squidgies-case-study",
+      type: 'development' as const,
     },
     {
       title: t('portfolio.ecommerce.title'),
@@ -46,9 +50,12 @@ const Index = () => {
       image: "/squidgies.png",
       bg: "bg-gradient-to-br from-peach to-peach-light",
       description: t('portfolio.ecommerce.description'),
-      link: "/squidgies-case-study"
+      link: "/squidgies-case-study",
+      type: 'design' as const,
     }
   ];
+
+  const portfolioItems = allPortfolioItems.filter(item => item.type === projectType);
 
   const tools = [
     { name: "Figma", icon: <Figma className="w-8 h-8" />, color: "text-purple-500" },
@@ -166,6 +173,27 @@ const Index = () => {
       {/* Portfolio Grid */}
       <section id="work" className="py-16 px-6 bg-lavender-light">
         <div className="max-w-6xl mx-auto">
+            {/* Project Type Toggle */}
+          <div className="flex justify-center mb-12">
+            <div className="bg-card rounded-full p-1 border border-border">
+              <Button
+                variant={projectType === 'design' ? 'default' : 'ghost'}
+                size="sm"
+                onClick={() => setProjectType('design')}
+                className="rounded-full px-6"
+              >
+                {t('portfolio.filter.design')}
+              </Button>
+              <Button
+                variant={projectType === 'development' ? 'default' : 'ghost'}
+                size="sm"
+                onClick={() => setProjectType('development')}
+                className="rounded-full px-6"
+              >
+                {t('portfolio.filter.development')}
+              </Button>
+            </div>
+          </div>
           <div className="grid md:grid-cols-2 gap-8">
             {portfolioItems.map((item, index) => (
               <Card 

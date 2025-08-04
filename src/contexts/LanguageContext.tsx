@@ -52,6 +52,11 @@ const translations = {
     'portfolio.ecommerce.title': 'E-commerce Platform',
     'portfolio.ecommerce.category': 'Product Design',
     'portfolio.ecommerce.description': 'Kids shopping experience',
+
+    // Portfolio filters
+    'portfolio.filter.design': 'Design Projects',
+    'portfolio.filter.development': 'Development Projects',
+    
   },
   es: {
     // Navigation
@@ -98,7 +103,13 @@ const translations = {
     'portfolio.ecommerce.title': 'Plataforma E-commerce',
     'portfolio.ecommerce.category': 'Diseño de Producto',
     'portfolio.ecommerce.description': 'Experiencia de compra para productos de niños',
+    
+    // Portfolio filters
+    'portfolio.filter.design': 'Proyectos de Diseño',
+   'portfolio.filter.development': 'Proyectos de Desarrollo',
+  
   }
+
 };
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
