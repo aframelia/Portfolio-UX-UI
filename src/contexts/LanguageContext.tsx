@@ -74,6 +74,33 @@ const translations = {
     
     // Navigation within case studies
     'case.nav.back': 'Back to Portfolio',
+
+    // Flight Case Study
+    'flight.hero.title': 'Fixing Flight Confusion ✈️',
+    'flight.hero.subtitle': 'How I redesigned the UX for a travel app with real users in mind',
+    'flight.meta.project': 'Flight booking mobile app',
+    'flight.meta.timeline': '8 weeks',
+    'flight.meta.role': 'UX/UI Designer',
+    'flight.meta.team': 'Solo Project',
+    'flight.meta.tools': 'Figma, Adobe XD, Notion',
+
+    // Cupcake Case Study
+    'cupcake.hero.title': 'Toronto Cupcake Redesign 🧁',
+    'cupcake.hero.subtitle': 'Redesigning a cupcake store website to improve navigation, clarity, and conversion',
+    'cupcake.meta.project': 'Cupcake store website redesign',
+    'cupcake.meta.timeline': '4 weeks',
+    'cupcake.meta.role': 'UX/UI Designer',
+    'cupcake.meta.team': 'Solo project – Research, Design, and Prototyping',
+    'cupcake.meta.tools': 'Figma, Adobe XD, Maze, Notion',
+
+    // Squidgies Case Study
+    'squidgies.hero.title': 'Squidgies E-commerce 🧢',
+    'squidgies.hero.subtitle': 'A smarter way for parents to shop kids\' clothes that actually fit and are in stock',
+    'squidgies.meta.project': 'E-commerce mobile app for children\'s clothes',
+    'squidgies.meta.timeline': '6 weeks',
+    'squidgies.meta.role': 'UX/UI Designer, Front-End Developer',
+    'squidgies.meta.team': 'Solo Project',
+    'squidgies.meta.tools': 'Figma, React Native, Notion',
   },
   es: {
     // Navigation
@@ -142,6 +169,33 @@ const translations = {
     
     // Navigation within case studies
     'case.nav.back': 'Volver al Portfolio',
+
+    // Flight Case Study
+    'flight.hero.title': 'Resolviendo la Confusión de Vuelos ✈️',
+    'flight.hero.subtitle': 'Cómo rediseñé la UX para una app de viajes pensando en usuarios reales',
+    'flight.meta.project': 'App móvil de reservas de vuelos',
+    'flight.meta.timeline': '8 semanas',
+    'flight.meta.role': 'Diseñador UX/UI',
+    'flight.meta.team': 'Proyecto Solo',
+    'flight.meta.tools': 'Figma, Adobe XD, Notion',
+
+    // Cupcake Case Study
+    'cupcake.hero.title': 'Rediseño Toronto Cupcake 🧁',
+    'cupcake.hero.subtitle': 'Rediseñando un sitio web de cupcakes para mejorar navegación, claridad y conversión',
+    'cupcake.meta.project': 'Rediseño de sitio web de tienda de cupcakes',
+    'cupcake.meta.timeline': '4 semanas',
+    'cupcake.meta.role': 'Diseñador UX/UI',
+    'cupcake.meta.team': 'Proyecto solo – Investigación, Diseño y Prototipado',
+    'cupcake.meta.tools': 'Figma, Adobe XD, Maze, Notion',
+
+    // Squidgies Case Study
+    'squidgies.hero.title': 'Squidgies E-commerce 🧢',
+    'squidgies.hero.subtitle': 'Una forma más inteligente para que los padres compren ropa infantil que realmente les quede y esté en stock',
+    'squidgies.meta.project': 'App móvil de e-commerce para ropa infantil',
+    'squidgies.meta.timeline': '6 semanas',
+    'squidgies.meta.role': 'Diseñador UX/UI, Desarrollador Front-End',
+    'squidgies.meta.team': 'Proyecto Solo',
+    'squidgies.meta.tools': 'Figma, React Native, Notion',
   }
 };
 
