@@ -3,17 +3,17 @@ import { MessageCircle, User } from "lucide-react";
 const CaseResearch = () => {
   const quotes = [
     {
-      text: "I kept switching dates over and over — it felt like a guessing game just to find a good price.",
+      text: "I get so confused trying to find my booking confirmation. Where is everything?",
       author: "Sarah, 34",
       bg: "peach-light"
     },
     {
-      text: "I wish there was a way to see the cheapest days at a glance instead of checking each one manually.",
+      text: "The app doesn't tell me when my gate changes. I almost missed my flight!",
       author: "Marcus, 28",
       bg: "mint-light"
     },
     {
-      text: "It took me over 30 minutes to find a flight that fit my budget — I nearly gave up.",
+      text: "Booking a flight takes forever. Too many steps and confusing options.",
       author: "Elena, 42",
       bg: "sky-light"
     }

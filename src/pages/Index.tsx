@@ -13,49 +13,38 @@ const Index = () => {
   const navigate = useNavigate();
   const { t } = useLanguage();
   const [menuOpen, setMenuOpen] = useState(false);
-  const [projectType, setProjectType] = useState<'design' | 'development'>('design');
 
 
-  const allPortfolioItems = [
+  const portfolioItems = [
     {
       title: t('portfolio.flight.title'),
       category: t('portfolio.flight.category'),
       image: "/flight.png",
       bg: "bg-gradient-to-br from-sky to-sky-light",
-      description: t('portfolio.flight.description'),
-      type: 'design' as const,
-      route: '/flight-case-study'
+      description: t('portfolio.flight.description')
     },
     {
       title: t('portfolio.redesign.title'),
       category: t('portfolio.redesign.category'),
       image: "/TorontoMoc.png",
       bg: "bg-gradient-to-br from-slate-800 to-slate-900",
-      description: t('portfolio.redesign.description'),
-      type: 'design' as const,
-      route: '/cupcake-case-study'
-    },
-    {
-      title: t('portfolio.ecommerce.title'),
-      category: t('portfolio.ecommerce.category'),
-      image: "/squidgies.png",
-      bg: "bg-gradient-to-br from-peach to-peach-light",
-      description: t('portfolio.ecommerce.description'),
-      type: 'design' as const,
-      route: '/squidgies-case-study'
+      description: t('portfolio.redesign.description')
     },
     {
       title: t('portfolio.design.title'),
       category: t('portfolio.design.category'),
       image: "/Portfoilio.png",
       bg: "bg-gradient-to-br from-mint to-mint-light",
-      description: t('portfolio.design.description'),
-      type: 'development' as const,
-      route: '/'
+      description: t('portfolio.design.description')
+    },
+    {
+      title: t('portfolio.ecommerce.title'),
+      category: t('portfolio.ecommerce.category'),
+      image: "/squidgies.png",
+      bg: "bg-gradient-to-br from-peach to-peach-light",
+      description: t('portfolio.ecommerce.description')
     }
   ];
-
-  const portfolioItems = allPortfolioItems.filter(item => item.type === projectType);
 
   const tools = [
     { name: "Figma", icon: <Figma className="w-8 h-8" />, color: "text-purple-500" },
@@ -151,34 +140,12 @@ const Index = () => {
       {/* Portfolio Grid */}
       <section id="work" className="py-16 px-6 bg-lavender-light">
         <div className="max-w-6xl mx-auto">
-          {/* Project Type Toggle */}
-          <div className="flex justify-center mb-12">
-            <div className="bg-card rounded-full p-1 border border-border">
-              <Button
-                variant={projectType === 'design' ? 'default' : 'ghost'}
-                size="sm"
-                onClick={() => setProjectType('design')}
-                className="rounded-full px-6"
-              >
-                {t('portfolio.filter.design')}
-              </Button>
-              <Button
-                variant={projectType === 'development' ? 'default' : 'ghost'}
-                size="sm"
-                onClick={() => setProjectType('development')}
-                className="rounded-full px-6"
-              >
-                {t('portfolio.filter.development')}
-              </Button>
-            </div>
-          </div>
-          
           <div className="grid md:grid-cols-2 gap-8">
             {portfolioItems.map((item, index) => (
               <Card 
                 key={index} 
                 className="group cursor-pointer hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden"
-                onClick={() => navigate(item.route)}
+                onClick={() => navigate('/flight-case-study')}
               >
                 <div className={`h-64 ${item.bg} relative flex items-center justify-center`}>
                   {/* Mock device/interface */}

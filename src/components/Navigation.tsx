@@ -2,7 +2,6 @@ import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import LanguageToggle from "@/components/LanguageToggle";
 import ThemeToggle from "@/components/ThemeToggle";
-import { useLanguage } from "@/contexts/LanguageContext";
 
 const Navigation = () => {
   return (
@@ -12,7 +11,7 @@ const Navigation = () => {
         <a href="/">
           <Button variant="ghost" size="sm" className="flex items-center gap-2">
             <ArrowLeft className="w-4 h-4" />
-{useLanguage().t('case.nav.back')}
+            Back to Portfolio
           </Button>
         </a>
         <div className="flex items-center gap-4">
