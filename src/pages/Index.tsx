@@ -21,28 +21,32 @@ const Index = () => {
       category: t('portfolio.flight.category'),
       image: "/flight.png",
       bg: "bg-gradient-to-br from-sky to-sky-light",
-      description: t('portfolio.flight.description')
+      description: t('portfolio.flight.description'),
+      link: "/flight-case-study"
     },
     {
       title: t('portfolio.redesign.title'),
       category: t('portfolio.redesign.category'),
       image: "/TorontoMoc.png",
       bg: "bg-gradient-to-br from-slate-800 to-slate-900",
-      description: t('portfolio.redesign.description')
+      description: t('portfolio.redesign.description'),
+      link: "/cupcake-case-study"
     },
     {
       title: t('portfolio.design.title'),
       category: t('portfolio.design.category'),
       image: "/Portfoilio.png",
       bg: "bg-gradient-to-br from-mint to-mint-light",
-      description: t('portfolio.design.description')
+      description: t('portfolio.design.description'),
+      link: "/flight-case-study"
     },
     {
       title: t('portfolio.ecommerce.title'),
       category: t('portfolio.ecommerce.category'),
       image: "/squidgies.png",
       bg: "bg-gradient-to-br from-peach to-peach-light",
-      description: t('portfolio.ecommerce.description')
+      description: t('portfolio.ecommerce.description'),
+      link: "/flight-case-study"
     }
   ];
 
@@ -166,7 +170,7 @@ const Index = () => {
               <Card 
                 key={index} 
                 className="group cursor-pointer hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden"
-                onClick={() => navigate('/flight-case-study')}
+                onClick={() => navigate(item.link)}
               >
                 <div className={`h-64 ${item.bg} relative flex items-center justify-center`}>
                   {/* Mock device/interface */}
