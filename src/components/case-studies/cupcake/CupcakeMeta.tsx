@@ -1,6 +1,8 @@
 import { User, Wrench, Clock, Target, Cake } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const CupcakeMeta = () => {
+  const { t } = useLanguage();
   return (
     <section className="py-16 px-6 relative">
       <div className="max-w-6xl mx-auto">
@@ -10,7 +12,7 @@ const CupcakeMeta = () => {
               <User className="w-6 h-6 text-primary" />
               <h3 className="text-xl font-semibold text-foreground">Role</h3>
             </div>
-            <p className="text-muted-foreground">UX/UI Designer (Solo)</p>
+            <p className="text-muted-foreground">{t('cupcake.meta.role')}</p>
           </div>
           
           <div className="bg-card rounded-2xl p-8 shadow-sm border">
@@ -18,7 +20,7 @@ const CupcakeMeta = () => {
               <Wrench className="w-6 h-6 text-coral" />
               <h3 className="text-xl font-semibold text-foreground">Tools</h3>
             </div>
-            <p className="text-muted-foreground">Figma, Adobe XD, Maze, Notion</p>
+            <p className="text-muted-foreground">{t('cupcake.meta.tools')}</p>
           </div>
           
           <div className="bg-card rounded-2xl p-8 shadow-sm border">
@@ -26,7 +28,7 @@ const CupcakeMeta = () => {
               <Clock className="w-6 h-6 text-mint" />
               <h3 className="text-xl font-semibold text-foreground">Timeline</h3>
             </div>
-            <p className="text-muted-foreground">4 weeks (2025)</p>
+            <p className="text-muted-foreground">{t('cupcake.meta.timeline')}</p>
           </div>
 
           <div className="bg-card rounded-2xl p-8 shadow-sm border">
