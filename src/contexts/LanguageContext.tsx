@@ -17,7 +17,7 @@ const translations = {
     // Hero
     'hero.title': "Hi, I'm Afra.",
     'hero.subtitle': 'UX/UI Designer focused on creating thoughtful, joyful, human-first products.',
-    'hero.cta': 'See My Work',
+    'hero.cta': 'Download my CV',
     
     // About
     'about.title': 'About me',
@@ -63,7 +63,7 @@ const translations = {
     // Hero
     'hero.title': "Hola, soy Afra.",
     'hero.subtitle': 'Diseñadora UX/UI enfocada en crear productos reflexivos, alegres y centrados en las personas.',
-    'hero.cta': 'Ver Mi Trabajo',
+    'hero.cta': 'Descarga mi CV',
     
     // About
     'about.title': 'Sobre mí',

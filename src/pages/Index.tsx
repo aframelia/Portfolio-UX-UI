@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles, User, Mail, MessageCircle, Figma, Menu, X, Palette, Monitor, Coffee, Heart, Star, ArrowUp, Smile, Lightbulb, Zap, Eye, Target, Layers, PenTool, Users, MousePointer, Compass, Workflow, Linkedin, Github, Instagram, BaggageClaimIcon } from "lucide-react";
+import { ArrowRight, Sparkles, User, Mail, MessageCircle, Figma, Menu, X, Palette, Monitor, Workflow , Coffee, Heart, Star, ArrowUp, Smile, Lightbulb, Zap, Eye, Target, Layers, PenTool, Users, MousePointer, Compass, Globe, Code, Braces, Paintbrush, Linkedin, Github, Instagram, BaggageClaimIcon } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { Card } from "@/components/ui/card";
@@ -21,28 +21,32 @@ const Index = () => {
       category: t('portfolio.flight.category'),
       image: "/flight.png",
       bg: "bg-gradient-to-br from-sky to-sky-light",
-      description: t('portfolio.flight.description')
+      description: t('portfolio.flight.description'),
+      link: "/flight-case-study"
     },
     {
       title: t('portfolio.redesign.title'),
       category: t('portfolio.redesign.category'),
       image: "/TorontoMoc.png",
       bg: "bg-gradient-to-br from-slate-800 to-slate-900",
-      description: t('portfolio.redesign.description')
+      description: t('portfolio.redesign.description'),
+      link: "/cupcake-case-study"
     },
     {
       title: t('portfolio.design.title'),
       category: t('portfolio.design.category'),
       image: "/Portfoilio.png",
       bg: "bg-gradient-to-br from-mint to-mint-light",
-      description: t('portfolio.design.description')
+      description: t('portfolio.design.description'),
+      link: "/squidgies-case-study"
     },
     {
       title: t('portfolio.ecommerce.title'),
       category: t('portfolio.ecommerce.category'),
       image: "/squidgies.png",
       bg: "bg-gradient-to-br from-peach to-peach-light",
-      description: t('portfolio.ecommerce.description')
+      description: t('portfolio.ecommerce.description'),
+      link: "/squidgies-case-study"
     }
   ];
 
@@ -50,7 +54,11 @@ const Index = () => {
     { name: "Figma", icon: <Figma className="w-8 h-8" />, color: "text-purple-500" },
     { name: "Adobe XD", icon: <Palette className="w-8 h-8" />, color: "text-pink-500" },
     { name: "Framer", icon: <Monitor className="w-8 h-8" />, color: "text-blue-500" },
-    { name: "HotJar", icon: <Coffee className="w-8 h-8" />, color: "text-orange-500" }
+    { name: "HotJar", icon: <Coffee className="w-8 h-8" />, color: "text-orange-500" },
+    { name: "Webflow", icon: <Globe className="w-8 h-8" />, color: "text-indigo-500" },
+    { name: "React.js", icon: <Braces className="w-8 h-8" />, color: "text-cyan-500" },
+    { name: "HTML", icon: <Code className="w-8 h-8" />, color: "text-red-500" },
+    { name: "CSS", icon: <Paintbrush className="w-8 h-8" />, color: "text-blue-400" },
   ];
 
   return (
@@ -94,7 +102,7 @@ const Index = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="py-20 px-6 relative overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Decorative UX doodles */}
         <div className="doodle-sparkle top-8 left-8">
           <Lightbulb className="w-8 h-8" />
@@ -114,6 +122,21 @@ const Index = () => {
         <div className="doodle-heart bottom-40 right-8">
           <Layers className="w-4 h-4" />
         </div>
+        <div className="doodle-star top-10 right-40">
+          <Smile className="w-5 h-5" />
+        </div>
+        <div className="doodle-sparkle bottom-10 left-16">
+          <Sparkles className="w-6 h-6" />
+        </div>
+        <div className="doodle-arrow top-28 right-1/4">
+          <ArrowRight className="w-4 h-4 rotate-45" />
+        </div>
+        <div className="doodle-heart bottom-12 left-1/3">
+          <Heart className="w-5 h-5" />
+        </div>
+        <div className="doodle-smile top-1/2 right-20">
+          <Lightbulb className="w-6 h-6" />
+        </div>
         
         <div className="max-w-4xl mx-auto text-center font-baloo">
           <h1 className="text-6xl md:text-8xl font-baloo font-bold text-foreground mb-6">
@@ -123,17 +146,20 @@ const Index = () => {
             {t('hero.subtitle')}
           </p>
           
-          <Button 
+          <Button
             onClick={() => {
-              const section = document.getElementById("work");
-              if (section) {
-                section.scrollIntoView({ behavior: "smooth" });
-              }
+              const link = document.createElement('a');
+              link.href = '/Afra.CV.pdf'; 
+              link.download = 'Afra_Melia_CV.pdf'; 
+              document.body.appendChild(link);
+              link.click();
+              document.body.removeChild(link);
             }}
             className="bg-coral hover:bg-coral/90 text-white px-8 py-4 rounded-full font-baloo font-semibold shadow-lg hover:shadow-xl transition-all"
           >
             {t('hero.cta')}
           </Button>
+
         </div>
       </section>
 
@@ -145,7 +171,7 @@ const Index = () => {
               <Card 
                 key={index} 
                 className="group cursor-pointer hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden"
-                onClick={() => navigate('/flight-case-study')}
+                onClick={() => navigate(item.link)}
               >
                 <div className={`h-64 ${item.bg} relative flex items-center justify-center`}>
                   {/* Mock device/interface */}
