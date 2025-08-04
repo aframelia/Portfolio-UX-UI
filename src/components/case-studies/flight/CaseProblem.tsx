@@ -19,12 +19,13 @@ const CaseProblem = () => {
           </div>
           
           <p className="text-xl md:text-2xl text-foreground leading-relaxed">
-          When searching for a cheap flight with flexible dates, users often face a frustrating process of repeatedly changing dates on airline websites because initial options are too expensive. This case highlights how tedious the experience is and introduces a proposed solution to improve it.
+            Travelers struggle with booking and managing flights—confusing flows, 
+            poor visibility of changes, and scattered info.
           </p>
         </div>
         
         {/* Mockup placeholder */}
-        {/* <div className="mt-12 bg-gradient-to-br from-slate-100 to-slate-200 rounded-2xl p-8 max-w-md mx-auto border">
+        <div className="mt-12 bg-gradient-to-br from-slate-100 to-slate-200 rounded-2xl p-8 max-w-md mx-auto border">
           <div className="bg-white rounded-xl p-6 shadow-sm">
             <div className="text-sm text-muted-foreground mb-4">Original App Screenshot</div>
             <div className="space-y-3">
@@ -35,7 +36,7 @@ const CaseProblem = () => {
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
       </div>
     </section>
   );

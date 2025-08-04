@@ -7,7 +7,6 @@ import { LanguageProvider } from "@/contexts/LanguageContext";
 import Index from "./pages/Index";
 import FlightCaseStudy from "./pages/FlightCaseStudy";
 import TorontoCupcakeCaseStudy from "./pages/TorontoCupcakeCaseStudy";
-import SquidgiesCaseStudy from "./pages/SquidgiesCaseStudy";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -23,7 +22,6 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/flight-case-study" element={<FlightCaseStudy />} />
             <Route path="/cupcake-case-study" element={<TorontoCupcakeCaseStudy />} />
-            <Route path="/squidgies-case-study" element={<SquidgiesCaseStudy />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

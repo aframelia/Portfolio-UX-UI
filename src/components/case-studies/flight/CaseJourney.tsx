@@ -5,30 +5,30 @@ const CaseJourney = () => {
     {
       step: "1",
       title: "Search Flight",
-      description: "Opens app to check flight prices with flexible dates",
+      description: "Opens app to check flight status",
       emotion: "😐",
-      pain: "Too many date changes to find affordable flights"
+      pain: "Multiple apps to check"
     },
     {
-      step: "2",
+      step: "2", 
       title: "Navigate Menu",
-      description: "Struggles to filter flights within budget and flexible dates",
+      description: "Struggles to find 'My Flights' section",
       emotion: "😕",
-      pain: "Multiple searches on different dates leading to confusion"
+      pain: "Confusing navigation"
     },
     {
       step: "3",
       title: "Find Status",
-      description: "Taps through several screens to compare prices and dates",
+      description: "Taps through multiple screens for updates",
       emotion: "😠",
-      pain: "Too many taps and repeated manual checks"
+      pain: "Too many taps needed"
     },
     {
       step: "4",
-      title: "Set Price Alerts",
-      description: "Attempts to set alerts or notifications for better deals",
-      emotion: "😣",
-      pain: "Alert options are hard to find or not personalized"
+      title: "Check Gate Info",
+      description: "Opens airline website for gate details",
+      emotion: "😤",
+      pain: "Information scattered"
     }
   ];
 
@@ -81,7 +81,8 @@ const CaseJourney = () => {
             <Frown className="w-12 h-12 text-coral mx-auto mb-4" />
             <h3 className="text-xl font-bold text-foreground mb-2">End Result</h3>
             <p className="text-muted-foreground">
-            Maya had to repeatedly switch between multiple apps and websites to compare flight prices across different dates. The process was confusing and time-consuming, leaving her frustrated and overwhelmed before even booking a flight.
+              Maya ended up using 3 different apps and websites just to get basic flight information. 
+              She missed important updates and felt stressed throughout her journey.
             </p>
           </div>
         </div>

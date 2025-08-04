@@ -1,8 +1,6 @@
 import { User, Wrench, Clock, StickyNote } from "lucide-react";
-import { useLanguage } from "@/contexts/LanguageContext";
 
 const CaseMeta = () => {
-  const { t } = useLanguage();
   return (
     <section className="py-16 px-6 relative">
       <div className="max-w-6xl mx-auto">
@@ -12,7 +10,7 @@ const CaseMeta = () => {
               <User className="w-6 h-6 text-primary" />
               <h3 className="text-xl font-semibold text-foreground">Role</h3>
             </div>
-            <p className="text-muted-foreground">{t('flight.meta.role')}</p>
+            <p className="text-muted-foreground">Solo UX/UI Designer</p>
           </div>
           
           <div className="bg-card rounded-2xl p-8 shadow-sm border">

@@ -14,7 +14,7 @@ import CaseTesting from "@/components/case-studies/flight/CaseTesting";
 import CaseNextSteps from "@/components/case-studies/flight/CaseNextSteps";
 import CaseCTA from "@/components/CaseCTA";
 
-const CaseStudy = () => {
+const FlightCaseStudy = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
@@ -26,11 +26,11 @@ const CaseStudy = () => {
         <CaseGoals />
         <CasePersona />
         <CaseJourney />
-        {/* <CaseWireframes /> */}
+        <CaseWireframes />
         <CaseDesigns />
-        {/* <CaseTesting /> */}
-        {/* <CaseResults />
-        <CaseTakeaways /> */}
+        <CaseTesting />
+        <CaseResults />
+        <CaseTakeaways />
         <CaseNextSteps />
         <CaseCTA />
       </main>
@@ -38,4 +38,4 @@ const CaseStudy = () => {
   );
 };
 
-export default CaseStudy;
+export default FlightCaseStudy;
