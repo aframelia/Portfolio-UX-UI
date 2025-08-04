@@ -52,6 +52,28 @@ const translations = {
     'portfolio.ecommerce.title': 'E-commerce Platform',
     'portfolio.ecommerce.category': 'Product Design',
     'portfolio.ecommerce.description': 'Kids shopping experience',
+    
+    // Portfolio filters
+    'portfolio.filter.design': 'Design Projects',
+    'portfolio.filter.development': 'Development Projects',
+    
+    // Case study common
+    'case.overview': 'Project Overview',
+    'case.problem': 'The Problem',
+    'case.solution': 'The Solution',
+    'case.research': 'User Research',
+    'case.goals': 'UX Goals',
+    'case.persona': 'User Persona',
+    'case.journey': 'User Journey',
+    'case.wireframes': 'Wireframes',
+    'case.designs': 'UI Design Decisions',
+    'case.testing': 'Usability Testing',
+    'case.results': 'Results & Impact',
+    'case.takeaways': 'Lessons Learned',
+    'case.next': "What's Next?",
+    
+    // Navigation within case studies
+    'case.nav.back': 'Back to Portfolio',
   },
   es: {
     // Navigation
@@ -98,6 +120,28 @@ const translations = {
     'portfolio.ecommerce.title': 'Plataforma E-commerce',
     'portfolio.ecommerce.category': 'Diseño de Producto',
     'portfolio.ecommerce.description': 'Experiencia de compra para productos de niños',
+    
+    // Portfolio filters
+    'portfolio.filter.design': 'Proyectos de Diseño',
+    'portfolio.filter.development': 'Proyectos de Desarrollo',
+    
+    // Case study common
+    'case.overview': 'Resumen del Proyecto',
+    'case.problem': 'El Problema',
+    'case.solution': 'La Solución',
+    'case.research': 'Investigación de Usuarios',
+    'case.goals': 'Objetivos UX',
+    'case.persona': 'Persona de Usuario',
+    'case.journey': 'Viaje del Usuario',
+    'case.wireframes': 'Wireframes',
+    'case.designs': 'Decisiones de Diseño UI',
+    'case.testing': 'Pruebas de Usabilidad',
+    'case.results': 'Resultados e Impacto',
+    'case.takeaways': 'Lecciones Aprendidas',
+    'case.next': '¿Qué Sigue?',
+    
+    // Navigation within case studies
+    'case.nav.back': 'Volver al Portfolio',
   }
 };
 

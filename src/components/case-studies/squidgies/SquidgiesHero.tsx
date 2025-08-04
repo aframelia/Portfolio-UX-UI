@@ -14,7 +14,7 @@ const SquidgiesHero = () => {
       </div>
       
       <div className="text-center px-6 max-w-4xl">
-        <h1 className="text-4xl md:text-7xl font-bold text-foreground mb-6">
+        <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6">
           Squidgies E-commerce 🧢
         </h1>
         <p className="text-lg md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
