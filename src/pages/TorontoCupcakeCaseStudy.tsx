@@ -21,6 +21,7 @@ const TorontoCupcakeCaseStudy = () => {
       problem={<CupcakeProblem />}
       research={<CupcakeResearch />}
       goals={<CupcakeGoals />}
+      journeys={<CupcakeJourney/>}
       wireframes={<CupcakeWireframes />}
       designs={<CupcakeDesigns />}
       results={<CupcakeResults />}

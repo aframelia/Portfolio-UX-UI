@@ -1,4 +1,4 @@
-import { Lightbulb, Users, IterationCw, TrendingUp } from "lucide-react";
+import { Lightbulb, Users, IterationCw, TrendingUp, Briefcase } from "lucide-react";
 
 const CupcakeTakeaways = () => {
   const lessons = [
@@ -15,11 +15,11 @@ const CupcakeTakeaways = () => {
       insight: "Each iteration brought significant improvements"
     },
     {
-      icon: <TrendingUp className="w-8 h-8" />,
-      title: "Mobile-First Matters",
-      description: "Starting with mobile constraints improved overall design",
-      insight: "Most users were shopping on mobile devices"
-    },
+        icon: <Briefcase className="w-8 h-8" />,
+        title: "Designed for Work & Gifting",
+        description: "Desktop-first design catered to users ordering cupcakes for events, meetings, and corporate gifts.",
+        insight: "Majority of high-value orders came from desktop sessions"
+      },
     {
       icon: <Lightbulb className="w-8 h-8" />,
       title: "Information Architecture First",
@@ -71,7 +71,6 @@ const CupcakeTakeaways = () => {
               </h4>
               <ul className="space-y-2 text-muted-foreground">
                 <li>• Starting with user interviews</li>
-                <li>• Mobile-first design approach</li>
                 <li>• Iterative testing and refinement</li>
                 <li>• Focus on core user tasks</li>
                 <li>• Clear information hierarchy</li>

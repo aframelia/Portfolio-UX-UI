@@ -7,6 +7,7 @@ const CaseStudyLayout = ({
   problem,
   research,
   goals,
+  journeys,
   wireframes,
   designs,
   results,
@@ -17,6 +18,7 @@ const CaseStudyLayout = ({
   problem: React.ReactNode;
   research: React.ReactNode;
   goals: React.ReactNode;
+  journeys:React.ReactNode;
   wireframes: React.ReactNode;
   designs: React.ReactNode;
   results: React.ReactNode;
@@ -31,6 +33,7 @@ const CaseStudyLayout = ({
         {problem}
         {research}
         {goals}
+        {journeys}
         {wireframes}
         {designs}
         {results}

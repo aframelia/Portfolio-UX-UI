@@ -1,29 +1,57 @@
 import { Smartphone, Monitor, Lightbulb, Layers } from "lucide-react";
 
 const CupcakeWireframes = () => {
-  const wireframes = [
-    {
-      title: "Mobile-First Homepage",
-      description: "Clear navigation and prominent CTA",
-      type: "mobile"
-    },
-    {
-      title: "Product Grid",
-      description: "Card layout with filtering options",
-      type: "desktop"
-    },
-    {
-      title: "Product Details",
-      description: "Ingredients, reviews, and allergen info",
-      type: "mobile"
-    },
-    {
-      title: "Streamlined Checkout",
-      description: "Reduced steps and clear progress",
-      type: "desktop"
-    }
-  ];
-
+    const wireframes = [
+      {
+        title: "Mobile-First Homepage",
+        description: "Clear navigation and prominent CTA",
+        category: "Mobile",
+        image: "/W.landing.png"
+      },
+      {
+        title: "Product Grid",
+        description: "Card layout with filtering options",
+        category: "Desktop",
+        image: "/W.cupcakes.png"
+      },
+      {
+        title: "Product Details",
+        description: "Ingredients, reviews, and allergen info",
+        category: "Mobile",
+        image: "/W.cupcake-info.png"
+      },
+      {
+        title: "Streamlined Checkout",
+        description: "Reduced steps and clear progress",
+        category: "Desktop",
+        image: "/W.cart.png"
+      },
+      {
+        title: "Streamlined Checkout",
+        description: "Reduced steps and clear progress",
+        category: "Desktop",
+        image: "/W.payments.png"
+      }
+    ];
+    const Card = ({ frame }) => (
+      <div className="min-w-[320px] max-w-[360px] bg-card rounded-2xl p-6 shadow-sm border hover:shadow-lg transition-shadow h-[640px] flex flex-col justify-between">
+        <div>
+          <div className="text-sm text-primary font-medium mb-2">{frame.category}</div>
+          <h3 className="text-xl font-semibold text-foreground mb-2">{frame.title}</h3>
+          <p className="text-muted-foreground mb-4">{frame.description}</p>
+        </div>
+        <div className="relative w-full flex justify-center items-end h-full overflow-hidden">
+          <div className="h-[480px] w-auto overflow-hidden rounded-xl border shadow-md">
+            <img 
+              src={frame.image} 
+              alt={frame.title} 
+              className="h-full w-auto object-contain"
+            />
+          </div>
+        </div>
+      </div>
+    );    
+    
   return (
     <section className="py-16 px-6">
       <div className="max-w-6xl mx-auto">
@@ -67,9 +95,30 @@ const CupcakeWireframes = () => {
             </div>
           </div>
         </div>
-        
         {/* Wireframe Showcase */}
-        <div className="grid md:grid-cols-2 gap-8">
+          <div className="mb-12">
+            <h3 className="text-2xl font-bold text-foreground mb-6 text-center">🖼 Wireframe Showcase</h3>
+
+            {/* Mobile View */}
+            <div className="md:hidden flex flex-col gap-6">
+              {wireframes.map((frame, index) => (
+                <Card key={index} frame={frame} />
+              ))}
+            </div>
+
+            {/* Horizontal Scroll for Desktop */}
+            <div className="hidden md:block overflow-x-auto -mx-6 px-6">
+              <div className="flex gap-6 w-max">
+                {wireframes.map((frame, index) => (
+                  <Card key={index} frame={frame} />
+                ))}
+              </div>
+            </div>
+          </div>
+
+
+        {/* Wireframe Showcase */}
+        {/* <div className="grid md:grid-cols-2 gap-8">
           {wireframes.map((wireframe, index) => (
             <div key={index} className="bg-card rounded-2xl p-8 shadow-sm border">
               <div className="flex items-center gap-3 mb-4">
@@ -80,10 +129,10 @@ const CupcakeWireframes = () => {
                 <h3 className="text-xl font-semibold text-foreground">{wireframe.title}</h3>
               </div>
               
-              <p className="text-muted-foreground mb-6">{wireframe.description}</p>
+              <p className="text-muted-foreground mb-6">{wireframe.description}</p> */}
               
               {/* Wireframe mockup */}
-              <div className="bg-gradient-to-br from-lavender-light to-sky-light rounded-xl p-6 min-h-[200px]">
+              {/* <div className="bg-gradient-to-br from-lavender-light to-sky-light rounded-xl p-6 min-h-[200px]">
                 <div className="space-y-3">
                   <div className="h-4 bg-white/60 rounded w-3/4"></div>
                   <div className="h-4 bg-white/60 rounded w-1/2"></div>
@@ -96,7 +145,7 @@ const CupcakeWireframes = () => {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
         
         {/* Key Decisions */}
         <div className="mt-12 bg-card rounded-2xl p-8 shadow-lg border max-w-4xl mx-auto">

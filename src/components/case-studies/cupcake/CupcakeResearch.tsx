@@ -35,24 +35,24 @@ const CupcakeResearch = () => {
         </div>
         
         {/* Research Methods */}
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
+        <div className="grid md:grid-cols-2 gap-8 mb-12">
           <div className="bg-card rounded-2xl p-8 shadow-sm border text-center">
-            <MessageCircle className="w-12 h-12 text-primary mx-auto mb-4" />
+            <MessageCircle className="w-12 h-12 text-primary mx-auto mb-6" />
             <h3 className="text-xl font-bold text-foreground mb-2">User Interviews</h3>
             <p className="text-muted-foreground">8 customers shared their experiences</p>
           </div>
           
           <div className="bg-card rounded-2xl p-8 shadow-sm border text-center">
-            <Users className="w-12 h-12 text-coral mx-auto mb-4" />
+            <Users className="w-12 h-12 text-coral mx-auto mb-6" />
             <h3 className="text-xl font-bold text-foreground mb-2">Usability Audit</h3>
             <p className="text-muted-foreground">Identified navigation pain points</p>
           </div>
           
-          <div className="bg-card rounded-2xl p-8 shadow-sm border text-center">
+          {/* <div className="bg-card rounded-2xl p-8 shadow-sm border text-center">
             <TrendingDown className="w-12 h-12 text-mint mx-auto mb-4" />
             <h3 className="text-xl font-bold text-foreground mb-2">Analytics Review</h3>
             <p className="text-muted-foreground">High bounce rate on product pages</p>
-          </div>
+          </div> */}
         </div>
         
         {/* Key Insights */}

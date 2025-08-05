@@ -3,6 +3,11 @@ import { Heart, Cake } from "lucide-react";
 const CupcakeHero = () => {
   return (
     <section className="relative min-h-screen bg-gradient-to-br from-coral-light via-peach-light to-lavender-light flex items-center justify-center overflow-hidden">
+      {/* <img 
+        src="/toronto.png" 
+        alt="Decorative background"
+        className="absolute inset-0 w-full h-full object-cover opacity-30 z-0"
+      /> */}
       {/* Cupcake doodle */}
       <div className="absolute top-8 left-8">
         <Cake className="text-primary w-8 h-8 animate-pulse" />

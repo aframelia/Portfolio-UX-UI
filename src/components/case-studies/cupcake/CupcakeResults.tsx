@@ -1,36 +1,36 @@
 import { TrendingUp, Clock, Heart, ShoppingCart } from "lucide-react";
 
 const CupcakeResults = () => {
-  const results = [
-    {
-      icon: <TrendingUp className="w-8 h-8" />,
-      metric: "+40%",
-      title: "Task Completion",
-      description: "Users successfully completed core tasks",
-      color: "text-primary"
-    },
-    {
-      icon: <Clock className="w-8 h-8" />,
-      metric: "-50%",
-      title: "Checkout Time", 
-      description: "Reduced time to complete purchase",
-      color: "text-coral"
-    },
-    {
-      icon: <Heart className="w-8 h-8" />,
-      metric: "+80%",
-      title: "Customer Trust",
-      description: "Improved confidence with ingredient visibility",
-      color: "text-mint"
-    },
-    {
-      icon: <ShoppingCart className="w-8 h-8" />,
-      metric: "+65%",
-      title: "Mobile Usability",
-      description: "Enhanced mobile shopping experience",
-      color: "text-peach"
-    }
-  ];
+  // const results = [
+  //   {
+  //     icon: <TrendingUp className="w-8 h-8" />,
+  //     metric: "+40%",
+  //     title: "Task Completion",
+  //     description: "Users successfully completed core tasks",
+  //     color: "text-primary"
+  //   },
+  //   {
+  //     icon: <Clock className="w-8 h-8" />,
+  //     metric: "-50%",
+  //     title: "Checkout Time", 
+  //     description: "Reduced time to complete purchase",
+  //     color: "text-coral"
+  //   },
+  //   {
+  //     icon: <Heart className="w-8 h-8" />,
+  //     metric: "+80%",
+  //     title: "Customer Trust",
+  //     description: "Improved confidence with ingredient visibility",
+  //     color: "text-mint"
+  //   },
+  //   {
+  //     icon: <ShoppingCart className="w-8 h-8" />,
+  //     metric: "+65%",
+  //     title: "Mobile Usability",
+  //     description: "Enhanced mobile shopping experience",
+  //     color: "text-peach"
+  //   }
+  // ];
 
   return (
     <section className="py-16 px-6">
@@ -43,7 +43,7 @@ const CupcakeResults = () => {
         </div>
         
         {/* Key Metrics */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        {/* <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {results.map((result, index) => (
             <div key={index} className="bg-card rounded-2xl p-8 shadow-sm border text-center hover:shadow-lg transition-shadow">
               <div className={`mx-auto mb-4 ${result.color}`}>
@@ -61,9 +61,9 @@ const CupcakeResults = () => {
             </div>
           ))}
         </div>
-        
+         */}
         {/* Business Impact */}
-        <div className="bg-gradient-to-br from-card via-card to-accent/5 rounded-3xl p-8 md:p-12 shadow-lg border">
+        {/* <div className="bg-gradient-to-br from-card via-card to-accent/5 rounded-3xl p-8 md:p-12 shadow-lg border">
           <h3 className="text-2xl font-bold text-foreground mb-8 text-center">Business Impact</h3>
           
           <div className="grid md:grid-cols-2 gap-8">
@@ -110,7 +110,7 @@ const CupcakeResults = () => {
             </div>
           </div>
         </div>
-        
+         */}
         {/* Before vs After Summary */}
         <div className="mt-12 grid md:grid-cols-2 gap-8">
           <div className="bg-coral-light rounded-2xl p-8 shadow-sm border">
@@ -119,7 +119,6 @@ const CupcakeResults = () => {
               <li>• Confusing navigation structure</li>
               <li>• Hidden ingredient information</li>
               <li>• Complex checkout process</li>
-              <li>• Poor mobile experience</li>
               <li>• High cart abandonment</li>
             </ul>
           </div>
@@ -129,22 +128,21 @@ const CupcakeResults = () => {
             <ul className="space-y-3 text-muted-foreground">
               <li>• Intuitive, clear navigation</li>
               <li>• Prominent ingredient & allergy info</li>
-              <li>• Streamlined 3-step checkout</li>
-              <li>• Mobile-first responsive design</li>
+              <li>• Streamlined checkout</li>
               <li>• Increased customer trust & sales</li>
             </ul>
           </div>
         </div>
         
         {/* Success Quote */}
-        <div className="mt-12 bg-card rounded-2xl p-8 shadow-lg border max-w-4xl mx-auto text-center">
+        {/* <div className="mt-12 bg-card rounded-2xl p-8 shadow-lg border max-w-4xl mx-auto text-center">
           <div className="text-6xl mb-4">🎉</div>
           <h3 className="text-2xl font-bold text-foreground mb-4">Project Success</h3>
           <p className="text-lg italic text-muted-foreground mb-4">
             "The new design has completely transformed our online sales. Customers can actually find what they're looking for now!"
           </p>
           <p className="text-sm text-muted-foreground">- Toronto Cupcake Store Owner</p>
-        </div>
+        </div> */}
       </div>
     </section>
   );

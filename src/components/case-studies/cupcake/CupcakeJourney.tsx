@@ -87,6 +87,65 @@ const CupcakeJourney = () => {
             <div className="mt-4 text-mint font-bold">Conversion Rate: +40%</div>
           </div>
         </div>
+
+        {/* User Journey Table & Visual Summary */}
+        <div className="mt-16 bg-card rounded-2xl p-8 shadow-lg border">
+          <h3 className="text-2xl font-bold text-foreground mb-6 text-center">📊 User Journey Table</h3>
+          
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm text-left border border-muted">
+              <thead className="text-xs uppercase bg-muted text-muted-foreground">
+                <tr>
+                  <th className="px-4 py-2">Stage</th>
+                  <th className="px-4 py-2">Before</th>
+                  <th className="px-4 py-2">Pain Point</th>
+                  <th className="px-4 py-2">After</th>
+                  <th className="px-4 py-2">Improvement</th>
+                </tr>
+              </thead>
+              <tbody className="text-foreground">
+                <tr className="border-t">
+                  <td className="px-4 py-3 font-medium">Landing</td>
+                  <td className="px-4 py-3">Confused by layout</td>
+                  <td className="px-4 py-3">No CTA, cluttered homepage</td>
+                  <td className="px-4 py-3">Clear CTA shown</td>
+                  <td className="px-4 py-3">Homepage simplified</td>
+                </tr>
+                <tr className="border-t">
+                  <td className="px-4 py-3 font-medium">Browse</td>
+                  <td className="px-4 py-3">Couldn’t filter products</td>
+                  <td className="px-4 py-3">No categories or filters</td>
+                  <td className="px-4 py-3">Easy cupcake filtering</td>
+                  <td className="px-4 py-3">Improved product sorting</td>
+                </tr>
+                <tr className="border-t">
+                  <td className="px-4 py-3 font-medium">Product Page</td>
+                  <td className="px-4 py-3">No ingredient info</td>
+                  <td className="px-4 py-3">Missing details, no reviews</td>
+                  <td className="px-4 py-3">Full product info & reviews</td>
+                  <td className="px-4 py-3">Trust and clarity improved</td>
+                </tr>
+                <tr className="border-t">
+                  <td className="px-4 py-3 font-medium">Checkout</td>
+                  <td className="px-4 py-3">Abandoned cart</td>
+                  <td className="px-4 py-3">Too long, unclear flow</td>
+                  <td className="px-4 py-3">Fast, mobile-friendly checkout</td>
+                  <td className="px-4 py-3">Conversion improved</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          {/* Visual Summary */}
+          <div className="mt-12 text-center">
+            <h4 className="text-xl font-semibold mb-4 text-foreground">🧭 Journey Summary Visual</h4>
+            <div className="flex flex-wrap justify-center gap-4 text-3xl">
+              <div>😐 ➡️ 😕 ➡️ 😠 ➡️ 😤</div>
+              <div className="text-muted-foreground">→</div>
+              <div>😊 ➡️ 😍 ➡️ 🤩 ➡️ ✅</div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

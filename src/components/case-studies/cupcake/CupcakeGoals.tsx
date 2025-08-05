@@ -17,11 +17,11 @@ const CupcakeGoals = () => {
       title: "Product Details",
       description: "Ingredients, reviews, allergens"
     },
-    {
-      icon: <Smartphone className="w-8 h-8" />,
-      title: "Mobile-First",
-      description: "Responsive, mobile-friendly design"
-    }
+    // {
+    //   icon: <Smartphone className="w-8 h-8" />,
+    //   title: "Mobile-First",
+    //   description: "Responsive, mobile-friendly design"
+    // }
   ];
 
   return (
@@ -34,9 +34,9 @@ const CupcakeGoals = () => {
           <p className="text-xl text-muted-foreground">Creating a delightful shopping experience</p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 relative">
           {goals.map((goal, index) => (
-            <div key={index} className="relative">
+            <div key={index} className="relative h-full">
               <div className="bg-card rounded-2xl p-8 shadow-sm border h-full">
                 <div className="text-primary mb-4">
                   {goal.icon}
@@ -48,9 +48,9 @@ const CupcakeGoals = () => {
                   {goal.description}
                 </p>
               </div>
-              
-              {/* Arrow between goals on desktop */}
-              {index < goals.length - 1 && index % 2 === 0 && (
+
+              {/* Show arrow for all except last */}
+              {index < goals.length - 1 && (
                 <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2 z-10">
                   <ArrowRight className="w-6 h-6 text-coral" />
                 </div>
@@ -60,7 +60,7 @@ const CupcakeGoals = () => {
         </div>
         
         {/* Success metrics */}
-        <div className="mt-12 bg-card rounded-2xl p-8 shadow-lg border max-w-4xl mx-auto">
+        {/* <div className="mt-12 bg-card rounded-2xl p-8 shadow-lg border max-w-4xl mx-auto">
           <h3 className="text-2xl font-bold text-foreground mb-6 text-center">Success Metrics</h3>
           <div className="grid md:grid-cols-3 gap-6 text-center">
             <div>
@@ -76,7 +76,7 @@ const CupcakeGoals = () => {
               <p className="text-muted-foreground">User Satisfaction</p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
