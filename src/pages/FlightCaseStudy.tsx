@@ -26,10 +26,10 @@ const FlightCaseStudy = () => {
         <CaseGoals />
         <CasePersona />
         <CaseJourney />
-        <CaseWireframes />
+        {/* <CaseWireframes /> */}
         <CaseDesigns />
-        <CaseTesting />
-        <CaseResults />
+        {/* <CaseTesting />
+        <CaseResults /> */}
         <CaseTakeaways />
         <CaseNextSteps />
         <CaseCTA />

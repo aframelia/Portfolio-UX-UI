@@ -18,7 +18,7 @@ const CaseMeta = () => {
               <Wrench className="w-6 h-6 text-coral" />
               <h3 className="text-xl font-semibold text-foreground">Tools</h3>
             </div>
-            <p className="text-muted-foreground">Figma, Maze, Notion, FigJam</p>
+            <p className="text-muted-foreground">Figma, Notion</p>
           </div>
           
           <div className="bg-card rounded-2xl p-8 shadow-sm border">
@@ -26,7 +26,7 @@ const CaseMeta = () => {
               <Clock className="w-6 h-6 text-mint" />
               <h3 className="text-xl font-semibold text-foreground">Timeline</h3>
             </div>
-            <p className="text-muted-foreground">4 weeks (2025)</p>
+            <p className="text-muted-foreground">4 weeks</p>
           </div>
         </div>
       </div>
