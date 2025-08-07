@@ -16,7 +16,7 @@ const translations = {
     
     // Hero
     'hero.title': "Hi, I'm Afra.",
-    'hero.subtitle': 'UX/UI Designer focused on creating thoughtful, joyful, human-first products.',
+    'hero.subtitle': 'UX/UI Designer and web developer focused on creating thoughtful, joyful, human-first products.',
     'hero.cta': 'Download my CV',
     
     // About
@@ -67,12 +67,12 @@ const translations = {
     
     // Hero
     'hero.title': "Hola, soy Afra.",
-    'hero.subtitle': 'Diseñadora UX/UI enfocada en crear productos reflexivos, alegres y centrados en las personas.',
+    'hero.subtitle': 'Diseñadora UX/UI y desarrollador web enfocada en crear productos reflexivos, alegres y centrados en las personas.',
     'hero.cta': 'Descarga mi CV',
     
     // About
     'about.title': 'Sobre mí',
-    'about.intro': 'Soy Afra, Diseñadora UX/UI y parte del equipo fundador de pocos.',
+    'about.intro': 'Soy Afra, Diseñadora UX/UI y desarrollador web.',
     'about.ux': 'Amo todo sobre UX — investigación de usuarios, wireframing, prototipado, y también diseño para dar vida a la UX, ya sea en salud, productividad o entretenimiento.',
     'about.maker': 'Porque cada diseñador es usuario y creador, me encuentro constantemente construyendo aplicaciones y productos.',
     'about.experience': 'Mi experiencia varía — desde lo digital hasta el detalle y usualmente todo lo que está en el medio.',

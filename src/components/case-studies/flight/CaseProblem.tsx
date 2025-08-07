@@ -19,8 +19,7 @@ const CaseProblem = () => {
           </div>
           
           <p className="text-xl md:text-2xl text-foreground leading-relaxed">
-            Travelers struggle with booking and managing flights—confusing flows, 
-            poor visibility of changes, and scattered info.
+          Travelers looking for affordable flights with flexible dates face a frustrating experience — they must manually test multiple date combinations, navigate unclear interfaces, and switch between apps to find the right information. This makes a simple task feel overwhelming and time-consuming.
           </p>
         </div>
         

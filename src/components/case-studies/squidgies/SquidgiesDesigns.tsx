@@ -11,30 +11,18 @@ const SquidgiesDesigns = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-1 gap-12">
           {/* Main App Screens */}
           <div className="space-y-8">
             <div className="bg-background p-6 rounded-xl border border-border">
-              <img 
-                src="/squidgies.png" 
+              <h3 className="text-lg font-semibold text-foreground mb-2">Main App Flow</h3>   
+             <img 
+                src="/squidgiesUI.png" 
                 alt="Squidgies app main screens"
                 className="w-full h-auto rounded-lg mb-4"
               />
-              <h3 className="text-lg font-semibold text-foreground mb-2">Main App Flow</h3>
               <p className="text-muted-foreground text-sm">
                 From child registration to product discovery and checkout
-              </p>
-            </div>
-            
-            <div className="bg-background p-6 rounded-xl border border-border">
-              <img 
-                src="/squidgiesJurney.png" 
-                alt="Squidgies user journey visualization"
-                className="w-full h-auto rounded-lg mb-4"
-              />
-              <h3 className="text-lg font-semibold text-foreground mb-2">User Journey Map</h3>
-              <p className="text-muted-foreground text-sm">
-                Complete user flow from registration to purchase completion
               </p>
             </div>
           </div>

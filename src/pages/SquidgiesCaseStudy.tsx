@@ -21,6 +21,7 @@ const SquidgiesCaseStudy = () => {
       problem={<SquidgiesProblem />}
       research={<SquidgiesResearch />}
       goals={<SquidgiesGoals />}
+      journeys={<SquidgiesJourney/>}
       wireframes={<SquidgiesWireframes />}
       designs={<SquidgiesDesigns />}
       results={<SquidgiesResults />}

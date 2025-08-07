@@ -39,9 +39,9 @@ const CasePersona = () => {
                   Travel Needs
                 </h4>
                 <ul className="text-muted-foreground space-y-1">
-                  <li>• Quick access to gate & delay info</li>
-                  <li>• Real-time flight status updates</li>
-                  <li>• Easy sharing with family/colleagues</li>
+                <li>• Find affordable flights across flexible dates</li>
+                <li>• Compare prices quickly without repeating searches</li>
+                <li>• See all essential travel info in one place</li>
                 </ul>
               </div>
               
@@ -51,10 +51,10 @@ const CasePersona = () => {
                   Pain Points
                 </h4>
                 <ul className="text-muted-foreground space-y-1">
-                  <li>• Too many steps to find basic info</li>
-                  <li>• Hidden delay notifications</li>
-                  <li>• Confusing interface design</li>
-                  <li>• Stress when things go wrong</li>
+                <li>• Manually checking multiple dates is exhausting</li>
+                <li>• Budget-friendly options are hard to spot</li>
+                <li>• Info is scattered across tabs and apps</li>
+                <li>• Repetitive, time-consuming booking process</li>
                 </ul>
               </div>
             </div>

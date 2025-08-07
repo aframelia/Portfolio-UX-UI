@@ -42,21 +42,21 @@ const CupcakeDesigns = () => {
 
   const Card = ({ design }) => (
     <div className="min-w-[320px] max-w-[360px] bg-card rounded-2xl p-6 shadow-sm border hover:shadow-lg transition-shadow h-[640px] flex flex-col justify-between">
-      <div>
-        <div className="text-sm text-coral font-medium mb-2">{design.category}</div>
-        <h3 className="text-xl font-semibold text-foreground mb-2">{design.title}</h3>
-        <p className="text-muted-foreground mb-4">{design.description}</p>
-      </div>
-      <div className="relative w-full flex justify-center items-end h-full overflow-hidden">
-        <div className="h-[480px] w-auto overflow-hidden rounded-xl border shadow-md">
-          <img 
-            src={design.image} 
-            alt={design.title} 
-            className="h-full w-auto object-contain"
-          />
+        <div>
+          <div className="text-sm text-primary font-medium mb-2">{design.category}</div>
+          <h3 className="text-xl font-semibold text-foreground mb-2">{design.title}</h3>
+          <p className="text-muted-foreground mb-4">{design.description}</p>
+        </div>
+        <div className="relative w-full flex justify-center items-end h-full overflow-hidden">
+          <div className="h-[430px] w-auto overflow-hidden rounded-xl border shadow-md">
+            <img 
+              src={design.image} 
+              alt={design.title} 
+              className="h-full w-auto object-contain"
+            />
+          </div>
         </div>
       </div>
-    </div>
   );
   
 

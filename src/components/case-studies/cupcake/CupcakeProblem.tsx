@@ -1,4 +1,4 @@
-import { AlertTriangle, ShoppingCart, Search, Smartphone } from "lucide-react";
+import { AlertTriangle, ShoppingCart, Search, Smartphone, Ban  } from "lucide-react";
 
 const CupcakeProblem = () => {
   const problems = [
@@ -18,9 +18,9 @@ const CupcakeProblem = () => {
       description: "No product details, ingredients, or reviews"
     },
     {
-      icon: <Smartphone className="w-8 h-8" />,
-      title: "Poor Mobile UX",
-      description: "Mobile experience was frustrating and unusable"
+      icon: <Ban className="w-8 h-8" />,
+      title: "Limited Filters",
+      description: "Users couldn’t narrow down options to match their preferences"
     }
   ];
 

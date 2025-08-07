@@ -14,7 +14,7 @@ const SquidgiesWireframes = () => {
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-            ✏️ Wireframes & UI Design
+            ✏️ Design Decision
           </h2>
         </div>
         
@@ -61,7 +61,7 @@ const SquidgiesWireframes = () => {
         </div>
 
         {/* Wireframe Images */}
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+        {/* <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="bg-card p-6 rounded-xl border border-border">
             <img 
               src="/sketches.png" 
@@ -79,7 +79,7 @@ const SquidgiesWireframes = () => {
             />
             <p className="text-center text-muted-foreground text-sm">Final UI design</p>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
