@@ -21,10 +21,10 @@ const translations = {
     
     // About
     'about.title': 'About me',
-    'about.intro': "I'm Afra, a UX/UI Designer and Founding team of few.",
-    'about.ux': 'I love everything about UX — user findings, wireframing, prototyping, and I also design to make the UX come alive, whether that\'s healthcare, productivity or entertainment.',
-    'about.maker': 'Because every designer is both user and maker, I find myself constantly building applications and products.',
-    'about.experience': 'My experience within varies — from digital to detail and usually everything in between.',
+    'about.intro': "I'm Afra, a UX/UI Designer and Web Developer",
+    'about.ux': 'I love everything about UX — user findings, wireframing, prototyping, and I also design to make the UX come alive.',
+    'about.maker': 'Because I experience products as a user and bring them to life as a maker, I’m dedicated to building intuitive, impactful designs.',
+    'about.experience': 'I’m comfortable working on all kinds of things, from the digital side right down to the little things.',
     
     // Tools
     'tools.title1': 'These are the tools',
@@ -37,7 +37,7 @@ const translations = {
     'contact.name': 'Name',
     'contact.email': 'Email',
     'contact.message': 'Message',
-    'contact.submit': 'Submit',
+    'contact.submit': 'Contact',
     
     // Portfolio items
     'portfolio.flight.title': 'Flight Booking App',
@@ -46,7 +46,7 @@ const translations = {
     'portfolio.redesign.title': 'Redesign Website',
     'portfolio.redesign.category': 'UI Design',
     'portfolio.redesign.description': 'Redesigning an e-commerce cupcake website',
-    'portfolio.design.title': 'Portafolio template',
+    'portfolio.design.title': 'Portfolio template',
     'portfolio.design.category': 'UI Design, React.js',
     'portfolio.design.description': 'A template for a portfolio in React.js',
     'portfolio.ecommerce.title': 'E-commerce Platform',
@@ -88,7 +88,7 @@ const translations = {
     'contact.email': 'Correo',
     'contact.name': 'tu.nombre@email.com',
     'contact.message': 'Mensaje',
-    'contact.submit': 'Enviar',
+    'contact.submit': 'Contactar',
     
     // Portfolio items
     'portfolio.flight.title': 'App de Reservas de Vuelos',

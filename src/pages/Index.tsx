@@ -41,7 +41,7 @@ const Index = () => {
       image: "/Portfoilio.png",
       bg: "bg-gradient-to-br from-mint to-mint-light",
       description: t('portfolio.design.description'),
-      link: "/squidgies-case-study",
+      link: "https://github.com/aframelia/Portfolio",
       type: 'development' as const,
     },
     {
@@ -86,15 +86,11 @@ const Index = () => {
           <div className="hidden md:flex items-center gap-2">
             <LanguageToggle />
             <ThemeToggle />
-            <Button
-              onClick={() => {
-                const section = document.getElementById("contact");
-                if (section) section.scrollIntoView({ behavior: "smooth" });
-              }}
-              className="bg-coral hover:bg-coral/90 text-white rounded-full px-6"
-            >
-              {t('nav.contact')}
-            </Button>
+            <a href="mailto:afra.melia90@gmail.com" onClick={() => console.log('clicked')}>
+              <Button className="bg-coral hover:bg-coral/90 text-white rounded-full px-6">
+                {t('nav.contact')}
+              </Button>
+            </a>
           </div>
 
           {/* Mobile Nav Toggle */}
@@ -199,7 +195,13 @@ const Index = () => {
               <Card 
                 key={index} 
                 className="group cursor-pointer hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden"
-                onClick={() => navigate(item.link)}
+                onClick={() => {
+                  if (item.link.startsWith('http')) {
+                    window.open(item.link, '_blank');
+                  } else {
+                    navigate(item.link);
+                  }
+                }}                
               >
                 <div className={`h-64 ${item.bg} relative flex items-center justify-center`}>
                   {/* Mock device/interface */}
@@ -370,14 +372,13 @@ const Index = () => {
             </div>
             
             <div className="space-y-4">
-              <div className="grid grid-cols-2 gap-4">
-                <Input placeholder={t('contact.name')} className="bg-card dark:bg-card border-border" />
-                <Input placeholder={t('contact.email')} className="bg-card dark:bg-card border-border" />
-              </div>
-              <Textarea placeholder={t('contact.message')} rows={4} className="bg-card dark:bg-card border-border" />
-              <Button className="w-full bg-coral hover:bg-coral/90 text-white rounded-full py-3">
-                {t('contact.submit')}
-              </Button>
+            <Button
+              onClick={() => (window.location.href = "mailto:afra.melia90@gmail.com")}
+              className="w-full bg-coral hover:bg-coral/90 text-white rounded-full py-3"
+            >
+              {t('contact.submit')}
+            </Button>
+
             </div>
           </div>
         </div>
@@ -405,16 +406,11 @@ const Index = () => {
           >
             {t('nav.skills')}
           </a>
-          <Button
-            onClick={() => {
-              const section = document.getElementById("contact");
-              if (section) section.scrollIntoView({ behavior: "smooth" });
-              setMenuOpen(false);
-            }}
-            className="w-full bg-coral hover:bg-coral/90 text-white rounded-full"
-          >
-            {t('nav.contact')}
-          </Button>
+          <a href="mailto:afra.melia90@gmail.com" onClick={() => console.log('clicked')}>
+              <Button className="w-full bg-coral hover:bg-coral/90 text-white rounded-full">
+                {t('nav.contact')}
+              </Button>
+            </a>
         </div>
       )}
     </div>
