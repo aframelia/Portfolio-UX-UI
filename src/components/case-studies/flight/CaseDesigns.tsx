@@ -172,7 +172,6 @@ const CaseDesigns = () => {
             ))}
           </div>
         </div>
-
       </div>
 
       {/* Doodles */}
