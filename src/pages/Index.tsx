@@ -52,6 +52,15 @@ const Index = () => {
       description: t('portfolio.ecommerce.description'),
       link: "/squidgies-case-study",
       type: 'design' as const,
+    },
+    {
+      title: t('portfolio.ecommerce.title'),
+      category: t('portfolio.ecommerce.category'),
+      image: "/squidgies.png",
+      bg: "bg-gradient-to-br from-peach to-peach-light",
+      description: t('portfolio.ecommerce.description'),
+      link: "/AIhealth-case-study",
+      type: 'design' as const,
     }
   ];
 
