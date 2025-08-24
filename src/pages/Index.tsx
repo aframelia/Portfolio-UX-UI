@@ -360,7 +360,7 @@ const Index = () => {
             <div className="space-y-4">
             <div className="flex gap-6 justify-center md:justify-start">
               <a
-                href="https://linkedin.com/in/yourusername"
+                href="https://linkedin.com/in/AfraMelia"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
@@ -369,7 +369,7 @@ const Index = () => {
                 LinkedIn
               </a>
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/aframelia"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
@@ -378,7 +378,7 @@ const Index = () => {
                 GitHub
               </a>
               <a
-                href="https://instagram.com/yourusername"
+                href="https://instagram.com/uxafra"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
