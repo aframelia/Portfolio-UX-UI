@@ -360,7 +360,7 @@ const Index = () => {
             <div className="space-y-4">
             <div className="flex gap-6 justify-center md:justify-start">
               <a
-                href="https://linkedin.com/in/AfraMelia"
+                href="https://www.linkedin.com/in/afra-melia/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
