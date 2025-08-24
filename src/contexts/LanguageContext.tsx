@@ -52,6 +52,9 @@ const translations = {
     'portfolio.ecommerce.title': 'E-commerce Platform',
     'portfolio.ecommerce.category': 'Product Design',
     'portfolio.ecommerce.description': 'Kids shopping experience',
+    'portfolio.EndProject.title': 'Clinical Data Entry System',
+    'portfolio.EndProject.category': 'FullStack Development',
+    'portfolio.EndProject.description': 'A web application for clinicians to manage patient records and extract medical terms from clinical notes with NLP.',
 
     // Portfolio filters
     'portfolio.filter.design': 'Design Projects',

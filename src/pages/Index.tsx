@@ -53,14 +53,23 @@ const Index = () => {
       link: "/squidgies-case-study",
       type: 'design' as const,
     },
+    // {
+    //   title: t('portfolio.ecommerce.title'),
+    //   category: t('portfolio.ecommerce.category'),
+    //   image: "/squidgies.png",
+    //   bg: "bg-gradient-to-br from-peach to-peach-light",
+    //   description: t('portfolio.ecommerce.description'),
+    //   link: "/AIhealth-case-study",
+    //   type: 'design' as const,
+    // },
     {
-      title: t('portfolio.ecommerce.title'),
-      category: t('portfolio.ecommerce.category'),
-      image: "/squidgies.png",
-      bg: "bg-gradient-to-br from-peach to-peach-light",
-      description: t('portfolio.ecommerce.description'),
-      link: "/AIhealth-case-study",
-      type: 'design' as const,
+      title: t('portfolio.EndProject.title'),
+      category: t('portfolio.EndProject.category'),
+      image: "/DataEntryPAtients.png",
+      bg: "bg-gradient-to-br from-mint to-mint-light",
+      description: t('portfolio.EndProject.description'),
+      link: "https://github.com/aframelia/EndProject",
+      type: 'development' as const,
     }
   ];
 
