@@ -10,6 +10,7 @@ import TorontoCupcakeCaseStudy from "./pages/TorontoCupcakeCaseStudy";
 import SquidgiesCaseStudy from "./pages/SquidgiesCaseStudy";
 import AIHealtCaseStudy from "./pages/AIHealtCaseStudy";
 import NotFound from "./pages/NotFound";
+import { Analytics } from "@vercel/analytics/react";
 
 const queryClient = new QueryClient();
 
@@ -30,6 +31,7 @@ const App = () => (
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
+        <Analytics />
       </TooltipProvider>
     </LanguageProvider>
   </QueryClientProvider>
