@@ -47,10 +47,10 @@ const Index = () => {
     {
       title: t('portfolio.ecommerce.title'),
       category: t('portfolio.ecommerce.category'),
-      image: "/squidgies.png",
+      image: "/dektoppage.png",
       bg: "bg-gradient-to-br from-peach to-peach-light",
       description: t('portfolio.ecommerce.description'),
-      link: "/squidgies-case-study",
+      link: "/haircare-case-study",
       type: 'design' as const,
     },
     // {
@@ -70,6 +70,15 @@ const Index = () => {
       description: t('portfolio.EndProject.description'),
       link: "https://github.com/aframelia/EndProject",
       type: 'development' as const,
+    },
+    {
+      title: t('portfolio.ecommerce.title'),
+      category: t('portfolio.ecommerce.category'),
+      image: "/squidgies.png",
+      bg: "bg-gradient-to-br from-peach to-peach-light",
+      description: t('portfolio.ecommerce.description'),
+      link: "/squidgies-case-study",
+      type: 'design' as const,
     }
   ];
 
