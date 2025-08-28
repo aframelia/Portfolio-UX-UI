@@ -21,7 +21,7 @@ const BhiveHero = () => {
       <div className="text-center px-6 max-w-4xl">
         <div className="bg-white/20 backdrop-blur-sm p-8 rounded-xl shadow-md">
         <h1 className="text-4xl md:text-7xl font-bold text-foreground mb-6">
-          HairCare Company Webpage Redesign
+          Hair Care Company Webpage Redesign
         </h1>
         <p className="text-lg md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
         This redesign is a conceptual adaptation of a project completed under NDA. Visuals have been recreated for portfolio purposes.

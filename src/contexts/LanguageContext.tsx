@@ -55,6 +55,9 @@ const translations = {
     'portfolio.EndProject.title': 'Clinical Data Entry System',
     'portfolio.EndProject.category': 'FullStack Development',
     'portfolio.EndProject.description': 'A web application for clinicians to manage patient records and extract medical terms from clinical notes with NLP.',
+    'portfolio.bhive.title': 'Hair Care Company Redesign ',
+    'portfolio.bhive.category': 'Product Design',
+    'portfolio.bhive.description': 'Redesigned a haircare company’s website on Webflow to improve usability and brand presence.',
 
     // Portfolio filters
     'portfolio.filter.design': 'Design Projects',
@@ -106,6 +109,13 @@ const translations = {
     'portfolio.ecommerce.title': 'Plataforma E-commerce',
     'portfolio.ecommerce.category': 'Diseño de Producto',
     'portfolio.ecommerce.description': 'Experiencia de compra para productos de niños',
+    'portfolio.EndProject.title': 'Sistema de Entrada de Datos Clínicos',
+    'portfolio.EndProject.category': 'Desarrollo FullStack',
+    'portfolio.EndProject.description': 'Una aplicación web para que los clínicos gestionen los registros de pacientes y extraigan términos médicos de las notas clínicas mediante NLP.',
+    'portfolio.bhive.title': 'Rediseño de Empresa de Cuidado de Cabello',
+    'portfolio.bhive.category': 'Diseño de Producto',
+    'portfolio.bhive.description': 'Rediseño sitio web de una empresa de cuidado del cabello en Webflow para mejorar la usabilidad y la presencia de la marca.',
+
     
     // Portfolio filters
     'portfolio.filter.design': 'Proyectos de Diseño',

@@ -20,6 +20,9 @@ const BhiveDesign = () => {
                 alt="Bhive Website Redesign Preview" 
                 className="w-full h-full object-cover rounded-t-2xl transform group-hover:scale-105 transition-transform duration-500 ease-in-out"
                 />
+              <p className="text-center text-xs text-gray-500 mt-2">
+              Click the card to see full page
+              </p>
             </div>
             <div className="p-6">
                 <h3 className="text-2xl font-bold mb-1">Website Redesign</h3>
