@@ -13,7 +13,7 @@ const Index = () => {
   const navigate = useNavigate();
   const { t } = useLanguage();
   const [menuOpen, setMenuOpen] = useState(false);
-  const [projectType, setProjectType] = useState<'design' | 'development'>('design');
+  const [projectType, setProjectType] = useState<'design' | 'development'>('development');
 
 
   const allPortfolioItems = [
@@ -200,20 +200,20 @@ const Index = () => {
           <div className="flex justify-center mb-12">
             <div className="bg-card rounded-full p-1 border border-border">
               <Button
-                variant={projectType === 'design' ? 'default' : 'ghost'}
-                size="sm"
-                onClick={() => setProjectType('design')}
-                className="rounded-full px-6"
-              >
-                {t('portfolio.filter.design')}
-              </Button>
-              <Button
                 variant={projectType === 'development' ? 'default' : 'ghost'}
                 size="sm"
                 onClick={() => setProjectType('development')}
                 className="rounded-full px-6"
               >
                 {t('portfolio.filter.development')}
+              </Button>
+              <Button
+                variant={projectType === 'design' ? 'default' : 'ghost'}
+                size="sm"
+                onClick={() => setProjectType('design')}
+                className="rounded-full px-6"
+              >
+                {t('portfolio.filter.design')}
               </Button>
             </div>
           </div>
